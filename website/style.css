@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 body {
   background: #fffff8;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
@@ -6,14 +12,13 @@ body {
 #app {
   display: grid;
   grid-auto-rows: minmax(150px, auto);
-  /* grid-template-columns:  */
-  height: 100vh;
-  background: #f23557;
+  min-height: 100vh;
+  background: #0bd5f0;
   color: #f0d43a;
-  justify-content: center;
   grid-gap: 1em;
   font-size: 20px;
   font-family: "Oswald", sans-serif;
+  padding: 5vw;
 }
 
 .holder {
@@ -58,6 +63,7 @@ input {
 }
 
 button {
+  display: block;
   width: 400px;
   height: 100px;
   background: #3b4a6b;
