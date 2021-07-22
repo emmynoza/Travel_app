@@ -64,6 +64,7 @@ input {
 
 button {
   display: block;
+  cursor: pointer;
   width: 400px;
   height: 100px;
   background: #3b4a6b;
