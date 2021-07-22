@@ -6,7 +6,6 @@ const express = require("express");
 const bodyParser = require("body-parser");
 
 // Start up an instance of app
-
 const app = express();
 
 /* Middleware*/
@@ -29,4 +28,24 @@ const server = app.listen(port, listening);
 
 function listening() {
   console.log(`Server running on localhost:${port}`);
+}
+
+// Get Route
+
+app.get("/allData", getData);
+
+function getData(req, res) {
+  res.send(projectData);
+}
+
+// Post Route
+app.post("/postData", postData);
+
+function postData(req, res) {
+  const newEntry = {
+    temperature: res.body.temperature,
+    date: res.body.date,
+    userResponse: req.body,
+  };
+  projectData.push(newEntry);
 }
