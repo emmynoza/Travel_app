@@ -7,21 +7,27 @@
 body {
   background: #fffff8;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  height: 100vh;
 }
-
+.app-wrapper {
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
 #app {
-  display: grid;
-  grid-auto-rows: minmax(150px, auto);
-  min-height: 100vh;
   background: #0bd5f0;
   color: #f0d43a;
-  grid-gap: 1em;
+
   font-size: 20px;
   font-family: "Oswald", sans-serif;
-  padding: 5vw;
 }
 
 .holder {
+  width: 400px;
+  text-align: center;
 }
 
 .entry {
@@ -54,7 +60,7 @@ label {
 input {
   display: block;
   height: 60px;
-  width: 320px;
+  width: 400px;
   background: #22b2da;
   color: #f0d43a;
   font-size: 20px;

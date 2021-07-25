@@ -1,5 +1,5 @@
 // Setup empty JS object to act as endpoint for all routes
-projectData = {};
+let projectData = {};
 
 // Require Express to run server and routes
 const express = require("express");
@@ -21,9 +21,7 @@ app.use(cors());
 app.use(express.static("website"));
 
 // Setup Server
-
 const port = 8000;
-
 const server = app.listen(port, listening);
 
 function listening() {
@@ -31,21 +29,14 @@ function listening() {
 }
 
 // Get Route
-
-app.get("/allData", getData);
-
-function getData(req, res) {
+app.get("/allData", function (req, res) {
   res.send(projectData);
-}
+});
 
-// Post Route
+// POST Route
+
 app.post("/postData", postData);
 
 function postData(req, res) {
-  const newEntry = {
-    temperature: res.body.temperature,
-    date: res.body.date,
-    userResponse: req.body,
-  };
-  projectData.push(newEntry);
+  projectData = req.body;
 }
