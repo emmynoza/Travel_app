@@ -61,11 +61,11 @@ async function updateUI(response) {
   const tempUI = document.getElementById("temp");
   const contentUI = document.getElementById("content");
 
-  dateUI.innerHTML = `<h3 class= 'ui-response'> ${response.date} </h3>`;
-  tempUI.innerHTML = `<h3 class= 'ui-response'> ${tempConverter(
+  dateUI.innerHTML = `<h3 class= 'ui-response'>Date: ${response.date} </h3>`;
+  tempUI.innerHTML = `<h3 class= 'ui-response'> Temperature: ${tempConverter(
     response.temp
   )}°F</h3>`;
-  contentUI.innerHTML = `<h3 class= 'ui-response'> ${response.msg} </h3>`;
+  contentUI.innerHTML = `<h3 class= 'ui-response'>Feeling: ${response.msg} </h3>`;
 }
 
 // convert from Kelvin to Fahrenheit
