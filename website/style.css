@@ -1,37 +1,40 @@
 * {
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 body {
   background: #fffff8;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  height: 100vh;
 }
 .app-wrapper {
-  border: 2px solid red;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
   height: 100vh;
-}
-#app {
-  background: #0bd5f0;
-  color: #f0d43a;
+  background: #77dae7;
+
+  color: #fff;
 
   font-size: 20px;
   font-family: "Oswald", sans-serif;
 }
-
+.app-wrapper > div {
+  background-color: rgb(13, 212, 146);
+  width: 500px;
+  border-radius: 5px;
+  margin: 1vh 0;
+}
 .holder {
-  width: 400px;
-  text-align: center;
 }
 
 .entry {
   background: rgba(59, 74, 107, 0.4);
+  text-align: center;
 }
 
 #entryHolder {
@@ -59,9 +62,10 @@ label {
 
 input {
   display: block;
-  height: 60px;
-  width: 400px;
-  background: #22b2da;
+  height: 2em;
+  width: 100%;
+  margin: 10px 0;
+  background: #289cb9fd;
   color: #f0d43a;
   font-size: 20px;
   font-family: "Oswald", sans-serif;
@@ -71,24 +75,29 @@ input {
 button {
   display: block;
   cursor: pointer;
-  width: 400px;
+  width: 90%;
+  margin: 10px auto;
   height: 100px;
-  background: #3b4a6b;
-  color: #f0d43a;
+  background: #289cb9fd;
+  color: #fff;
   font-size: 26px;
   font-family: "Oswald", sans-serif;
   border: none;
+  border-radius: 5px;
   box-shadow: 2px 4px 5px #444;
 }
 h1 {
   font-size: 36px;
+  text-align: center;
 }
 
 textarea {
-  background: #22b2da;
+  background: #289cb9fd;
   color: #f0d43a;
   font-size: 20px;
   font-family: "Oswald", sans-serif;
+  width: 100%;
+  resize: none;
 }
 /* Reset style for HTML element on active to have no border*/
 input:focus,
