@@ -1,13 +1,13 @@
 /* Global Variables */
 const baseUrl = "https://api.openweathermap.org/data/2.5/weather?zip=";
-const apiKey = "&appid=7292ab5b2616d42aed863e6989a0f3ca";
+const apiKey = "&appid=7292ab5b2616d42aed863e6989a0f3ca&units=imperial";
 const zipCode = document.getElementById("zip");
 const feelings = document.getElementById("feelings");
 const generate = document.getElementById("generate");
 
 // Create a new date instance dynamically with JS
 let d = new Date();
-let newDate = d.getMonth() + "." + d.getDate() + "." + d.getFullYear();
+let newDate = d.getMonth() + "/" + d.getDate() + "/" + d.getFullYear();
 
 // Get API data and post to server
 async function callApi() {
@@ -62,20 +62,8 @@ async function updateUI(response) {
   const contentUI = document.getElementById("content");
 
   dateUI.innerHTML = `<h3 class= 'ui-response'>Date: ${response.date} </h3>`;
-  tempUI.innerHTML = `<h3 class= 'ui-response'> Temperature: ${tempConverter(
-    response.temp
-  )}°F</h3>`;
+  tempUI.innerHTML = `<h3 class= 'ui-response'> Temperature: ${response.temp}°F</h3>`;
   contentUI.innerHTML = `<h3 class= 'ui-response'>Feeling: ${response.msg} </h3>`;
-}
-
-// convert from Kelvin to Fahrenheit
-
-function tempConverter(temperature) {
-  let kelvinTemp = temperature;
-  let celsiusTemp = kelvinTemp - 273.15;
-  let Fahrenheit = celsiusTemp * (9 / 5) + 32;
-
-  return Fahrenheit.toFixed(2);
 }
 
 // Add event listener
