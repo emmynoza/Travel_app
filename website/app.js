@@ -6,8 +6,9 @@ const feelings = document.getElementById("feelings");
 const generate = document.getElementById("generate");
 
 // Create a new date instance dynamically with JS
-let d = new Date();
-let newDate = d.getMonth() + "/" + d.getDate() + "/" + d.getFullYear();
+let day = new Date();
+let newDate =
+  day.getMonth() + 1 + "/" + day.getDate() + "/" + day.getFullYear();
 
 // Get API data and post to server
 async function callApi() {
