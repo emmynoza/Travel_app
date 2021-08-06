@@ -18,7 +18,11 @@ const cors = require("cors");
 app.use(cors());
 
 // Initialize the main project folder
-app.use(express.static("src/client/views"));
+app.use(express.static("dist"));
+
+app.get('/', (req, res) => {
+  res.sendFile("dist/index.html")
+})
 
 // Setup Server
 const port = 8000;
@@ -27,6 +31,7 @@ const server = app.listen(port, listening);
 function listening() {
   console.log(`Server running on localhost:${port}`);
 }
+
 
 // Get Route
 app.get("/allData", function (req, res) {
