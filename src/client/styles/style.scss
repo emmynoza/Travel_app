@@ -1,126 +1,44 @@
+/* SCSS RGB */
+$blue-jeans: rgba(77, 168, 224, 1);
+$green-blue: rgba(33, 101, 164, 1);
+$spanish-orange: rgba(225, 105, 0, 1);
+$middle-yellow: rgba(255, 236, 31, 1);
+$spanish-viridian: rgba(12, 124, 89, 1);
+
 * {
   box-sizing: border-box;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
-body {
-  background: #fffff8;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-}
-.app-wrapper {
+.wrapper {
+  height: 100vh;
+  background: url(../media/background-image.png) no-repeat center;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: auto;
-  width: 100%;
-  height: 100vh;
-  background: #77dae7;
-
-  color: #fff;
-
-  font-size: 20px;
-  font-family: "Oswald", sans-serif;
-}
-.app-wrapper > div {
-  background-color: rgb(13, 212, 146);
-  width: 500px;
-  border-radius: 5px;
-  margin: 1vh 0;
-}
-.holder {
 }
 
-.entry {
-  background: rgba(59, 74, 107, 0.4);
-  text-align: center;
+.logo-wrapper {
+  font-family: "pacifico", cursive;
+  font-size: 46px;
+  letter-spacing: 10px;
+  color: $middle-yellow;
 }
 
-#entryHolder {
-}
-
-#date {
-}
-
-#temp {
-}
-
-#content {
-}
-
-.headline {
-}
-.title {
-}
-
-/*  Basic Styling To Override Default For Basic HTML Elements */
-label {
-  display: block;
-  font-size: 27px;
-}
-
-input {
-  display: block;
-  height: 2em;
-  width: 100%;
-  margin: 10px 0;
-  background: #289cb9fd;
-  color: #f0d43a;
-  font-size: 20px;
-  font-family: "Oswald", sans-serif;
-  border: none;
-}
-
-button {
-  display: block;
-  cursor: pointer;
-  width: 90%;
-  margin: 10px auto;
-  height: 100px;
-  background: #289cb9fd;
-  color: #fff;
-  font-size: 26px;
-  font-family: "Oswald", sans-serif;
-  border: none;
-  border-radius: 5px;
-  box-shadow: 2px 4px 5px #444;
-}
-h1 {
-  font-size: 36px;
-  text-align: center;
-}
-
-textarea {
-  background: #289cb9fd;
-  color: #f0d43a;
-  font-size: 20px;
-  font-family: "Oswald", sans-serif;
-  width: 100%;
-  resize: none;
-}
-/* Reset style for HTML element on active to have no border*/
-input:focus,
-select:focus,
-textarea:focus,
-button:focus {
-  outline: none;
-}
-/* Style for Placeholder Text*/
-::placeholder {
-  /* Firefox, Chrome, Opera */
-  color: #f0d43a;
-  font-family: "Oswald", sans-serif;
-}
-
-:-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
-  color: #f0d43a;
-  font-family: "Oswald", sans-serif;
-}
-
-::-ms-input-placeholder {
-  /* Microsoft Edge */
-  color: #f0d43a;
-  font-family: "Oswald", sans-serif;
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+  .input {
+    height: 10vh;
+    width: 100%;
+    margin: 2.5vh 0;
+    text-align: center;
+    font-size: 50px;
+    border: 10px solid $spanish-orange;
+    border-radius: 20px;
+  }
 }
