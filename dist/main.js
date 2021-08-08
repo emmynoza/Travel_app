@@ -87,6 +87,37 @@ var Client =
 /************************************************************************/
 /******/ ({
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/client/styles/_base.scss":
+/*!*******************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/client/styles/_base.scss ***!
+  \*******************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/cssWithMappingToString.js */ "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _media_background_image_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../media/background-image.png */ "./src/client/media/background-image.png");
+// Imports
+
+
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()(_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default.a);
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(_media_background_image_png__WEBPACK_IMPORTED_MODULE_3__["default"]);
+// Module
+___CSS_LOADER_EXPORT___.push([module.i, "/* SCSS RGB */\n* {\n  box-sizing: border-box;\n  padding: 0;\n  margin: 0; }\n\nbody {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") no-repeat center;\n  background-size: cover;\n  background-attachment: fixed;\n  width: 100%;\n  height: 100vh; }\n\n.wrapper {\n  height: 100vh;\n  padding: 10px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center; }\n  .wrapper .logo {\n    font-size: 6vh;\n    font-family: \"Pacifico\", cursive;\n    letter-spacing: 8px;\n    color: #ffec1f; }\n  .wrapper .form {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center; }\n    .wrapper .form input,\n    .wrapper .form .submit {\n      height: 10vh;\n      text-align: center;\n      font-size: 2vh;\n      width: 100%;\n      margin: 2.5vh;\n      border: 0.5vh solid #4da8e0;\n      border-radius: 20px; }\n      .wrapper .form input:hover,\n      .wrapper .form .submit:hover {\n        border: 0.5vh solid #e16900; }\n    .wrapper .form .submit {\n      cursor: pointer; }\n\n.results {\n  height: 100vh; }\n", "",{"version":3,"sources":["webpack://./src/client/styles/_base.scss"],"names":[],"mappings":"AAAA,aAAa;AACb;EACE,sBAAsB;EACtB,UAAU;EACV,SAAS,EAAE;;AAEb;EACE,oEAA+D;EAC/D,sBAAsB;EACtB,4BAA4B;EAC5B,WAAW;EACX,aAAa,EAAE;;AAEjB;EACE,aAAa;EACb,aAAa;EACb,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,uBAAuB,EAAE;EACzB;IACE,cAAc;IACd,gCAAgC;IAChC,mBAAmB;IACnB,cAAc,EAAE;EAClB;IACE,aAAa;IACb,sBAAsB;IACtB,mBAAmB;IACnB,uBAAuB,EAAE;IACzB;;MAEE,YAAY;MACZ,kBAAkB;MAClB,cAAc;MACd,WAAW;MACX,aAAa;MACb,2BAA2B;MAC3B,mBAAmB,EAAE;MACrB;;QAEE,2BAA2B,EAAE;IACjC;MACE,eAAe,EAAE;;AAEvB;EACE,aAAa,EAAE","sourcesContent":["/* SCSS RGB */\n* {\n  box-sizing: border-box;\n  padding: 0;\n  margin: 0; }\n\nbody {\n  background: url(../media/background-image.png) no-repeat center;\n  background-size: cover;\n  background-attachment: fixed;\n  width: 100%;\n  height: 100vh; }\n\n.wrapper {\n  height: 100vh;\n  padding: 10px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center; }\n  .wrapper .logo {\n    font-size: 6vh;\n    font-family: \"Pacifico\", cursive;\n    letter-spacing: 8px;\n    color: #ffec1f; }\n  .wrapper .form {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center; }\n    .wrapper .form input,\n    .wrapper .form .submit {\n      height: 10vh;\n      text-align: center;\n      font-size: 2vh;\n      width: 100%;\n      margin: 2.5vh;\n      border: 0.5vh solid #4da8e0;\n      border-radius: 20px; }\n      .wrapper .form input:hover,\n      .wrapper .form .submit:hover {\n        border: 0.5vh solid #e16900; }\n    .wrapper .form .submit {\n      cursor: pointer; }\n\n.results {\n  height: 100vh; }\n"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/client/styles/style.scss":
 /*!*******************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/client/styles/style.scss ***!
@@ -105,7 +136,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()(_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default.a);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "* {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0; }\n\nbody {\n  background: #fffff8;\n  font-family: -apple-system, BlinkMacSystemFont, sans-serif; }\n\n.app-wrapper {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  height: auto;\n  width: 100%;\n  height: 100vh;\n  background: #77dae7;\n  color: #fff;\n  font-size: 20px;\n  font-family: \"Oswald\", sans-serif; }\n\n.app-wrapper > div {\n  background-color: #0dd492;\n  width: 500px;\n  border-radius: 5px;\n  margin: 1vh 0; }\n\n.entry {\n  background: rgba(59, 74, 107, 0.4);\n  text-align: center; }\n\n/*  Basic Styling To Override Default For Basic HTML Elements */\nlabel {\n  display: block;\n  font-size: 27px; }\n\ninput {\n  display: block;\n  height: 2em;\n  width: 100%;\n  margin: 10px 0;\n  background: #289cb9fd;\n  color: #f0d43a;\n  font-size: 20px;\n  font-family: \"Oswald\", sans-serif;\n  border: none; }\n\nbutton {\n  display: block;\n  cursor: pointer;\n  width: 90%;\n  margin: 10px auto;\n  height: 100px;\n  background: #289cb9fd;\n  color: #fff;\n  font-size: 26px;\n  font-family: \"Oswald\", sans-serif;\n  border: none;\n  border-radius: 5px;\n  box-shadow: 2px 4px 5px #444; }\n\nh1 {\n  font-size: 36px;\n  text-align: center; }\n\ntextarea {\n  background: #289cb9fd;\n  color: #f0d43a;\n  font-size: 20px;\n  font-family: \"Oswald\", sans-serif;\n  width: 100%;\n  resize: none; }\n\n/* Reset style for HTML element on active to have no border*/\ninput:focus,\nselect:focus,\ntextarea:focus,\nbutton:focus {\n  outline: none; }\n\n/* Style for Placeholder Text*/\n::placeholder {\n  /* Firefox, Chrome, Opera */\n  color: #f0d43a;\n  font-family: \"Oswald\", sans-serif; }\n\n:-ms-input-placeholder {\n  /* Internet Explorer 10-11 */\n  color: #f0d43a;\n  font-family: \"Oswald\", sans-serif; }\n\n::-ms-input-placeholder {\n  /* Microsoft Edge */\n  color: #f0d43a;\n  font-family: \"Oswald\", sans-serif; }\n", "",{"version":3,"sources":["webpack://./src/client/styles/style.scss"],"names":[],"mappings":"AAAA;EACE,sBAAsB;EACtB,SAAS;EACT,UAAU,EAAE;;AAEd;EACE,mBAAmB;EACnB,0DAA0D,EAAE;;AAE9D;EACE,aAAa;EACb,sBAAsB;EACtB,uBAAuB;EACvB,mBAAmB;EACnB,YAAY;EACZ,WAAW;EACX,aAAa;EACb,mBAAmB;EACnB,WAAW;EACX,eAAe;EACf,iCAAiC,EAAE;;AAErC;EACE,yBAAyB;EACzB,YAAY;EACZ,kBAAkB;EAClB,aAAa,EAAE;;AAEjB;EACE,kCAAkC;EAClC,kBAAkB,EAAE;;AAEtB,+DAA+D;AAC/D;EACE,cAAc;EACd,eAAe,EAAE;;AAEnB;EACE,cAAc;EACd,WAAW;EACX,WAAW;EACX,cAAc;EACd,qBAAqB;EACrB,cAAc;EACd,eAAe;EACf,iCAAiC;EACjC,YAAY,EAAE;;AAEhB;EACE,cAAc;EACd,eAAe;EACf,UAAU;EACV,iBAAiB;EACjB,aAAa;EACb,qBAAqB;EACrB,WAAW;EACX,eAAe;EACf,iCAAiC;EACjC,YAAY;EACZ,kBAAkB;EAClB,4BAA4B,EAAE;;AAEhC;EACE,eAAe;EACf,kBAAkB,EAAE;;AAEtB;EACE,qBAAqB;EACrB,cAAc;EACd,eAAe;EACf,iCAAiC;EACjC,WAAW;EACX,YAAY,EAAE;;AAEhB,4DAA4D;AAC5D;;;;EAIE,aAAa,EAAE;;AAEjB,8BAA8B;AAC9B;EACE,2BAA2B;EAC3B,cAAc;EACd,iCAAiC,EAAE;;AAErC;EACE,4BAA4B;EAC5B,cAAc;EACd,iCAAiC,EAAE;;AAErC;EACE,mBAAmB;EACnB,cAAc;EACd,iCAAiC,EAAE","sourcesContent":["* {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0; }\n\nbody {\n  background: #fffff8;\n  font-family: -apple-system, BlinkMacSystemFont, sans-serif; }\n\n.app-wrapper {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  height: auto;\n  width: 100%;\n  height: 100vh;\n  background: #77dae7;\n  color: #fff;\n  font-size: 20px;\n  font-family: \"Oswald\", sans-serif; }\n\n.app-wrapper > div {\n  background-color: #0dd492;\n  width: 500px;\n  border-radius: 5px;\n  margin: 1vh 0; }\n\n.entry {\n  background: rgba(59, 74, 107, 0.4);\n  text-align: center; }\n\n/*  Basic Styling To Override Default For Basic HTML Elements */\nlabel {\n  display: block;\n  font-size: 27px; }\n\ninput {\n  display: block;\n  height: 2em;\n  width: 100%;\n  margin: 10px 0;\n  background: #289cb9fd;\n  color: #f0d43a;\n  font-size: 20px;\n  font-family: \"Oswald\", sans-serif;\n  border: none; }\n\nbutton {\n  display: block;\n  cursor: pointer;\n  width: 90%;\n  margin: 10px auto;\n  height: 100px;\n  background: #289cb9fd;\n  color: #fff;\n  font-size: 26px;\n  font-family: \"Oswald\", sans-serif;\n  border: none;\n  border-radius: 5px;\n  box-shadow: 2px 4px 5px #444; }\n\nh1 {\n  font-size: 36px;\n  text-align: center; }\n\ntextarea {\n  background: #289cb9fd;\n  color: #f0d43a;\n  font-size: 20px;\n  font-family: \"Oswald\", sans-serif;\n  width: 100%;\n  resize: none; }\n\n/* Reset style for HTML element on active to have no border*/\ninput:focus,\nselect:focus,\ntextarea:focus,\nbutton:focus {\n  outline: none; }\n\n/* Style for Placeholder Text*/\n::placeholder {\n  /* Firefox, Chrome, Opera */\n  color: #f0d43a;\n  font-family: \"Oswald\", sans-serif; }\n\n:-ms-input-placeholder {\n  /* Internet Explorer 10-11 */\n  color: #f0d43a;\n  font-family: \"Oswald\", sans-serif; }\n\n::-ms-input-placeholder {\n  /* Microsoft Edge */\n  color: #f0d43a;\n  font-family: \"Oswald\", sans-serif; }\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, "", "",{"version":3,"sources":[],"names":[],"mappings":"","sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -228,6 +259,51 @@ module.exports = function cssWithMappingToString(item) {
   }
 
   return [content].join("\n");
+};
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
+/*!********************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+module.exports = function (url, options) {
+  if (!options) {
+    // eslint-disable-next-line no-param-reassign
+    options = {};
+  } // eslint-disable-next-line no-underscore-dangle, no-param-reassign
+
+
+  url = url && url.__esModule ? url.default : url;
+
+  if (typeof url !== "string") {
+    return url;
+  } // If url is already wrapped in quotes, remove them
+
+
+  if (/^['"].*['"]$/.test(url)) {
+    // eslint-disable-next-line no-param-reassign
+    url = url.slice(1, -1);
+  }
+
+  if (options.hash) {
+    // eslint-disable-next-line no-param-reassign
+    url += options.hash;
+  } // Should url be wrapped?
+  // See https://drafts.csswg.org/css-values-3/#urls
+
+
+  if (/["'() \t\n]/.test(url) || options.needQuotes) {
+    return "\"".concat(url.replace(/"/g, '\\"').replace(/\n/g, "\\n"), "\"");
+  }
+
+  return url;
 };
 
 /***/ }),
@@ -516,21 +592,134 @@ module.exports = function (list, options) {
 /*!*****************************!*\
   !*** ./src/client/index.js ***!
   \*****************************/
-/*! exports provided: logo, styles */
+/*! exports provided: logo, styles, base, submitForm */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _media_wanderlust_logo_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../media/wanderlust-logo.png */ "./src/media/wanderlust-logo.png");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "logo", function() { return _media_wanderlust_logo_png__WEBPACK_IMPORTED_MODULE_0__["default"]; });
+/* harmony import */ var _client_media_wanderlust_logo_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../client/media/wanderlust-logo.png */ "./src/client/media/wanderlust-logo.png");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "logo", function() { return _client_media_wanderlust_logo_png__WEBPACK_IMPORTED_MODULE_0__["default"]; });
 
 /* harmony import */ var _styles_style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/style.scss */ "./src/client/styles/style.scss");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "styles", function() { return _styles_style_scss__WEBPACK_IMPORTED_MODULE_1__["default"]; });
 
+/* harmony import */ var _styles_base_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles/_base.scss */ "./src/client/styles/_base.scss");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "base", function() { return _styles_base_scss__WEBPACK_IMPORTED_MODULE_2__["default"]; });
+
+/* harmony import */ var _js_submit__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/submit */ "./src/client/js/submit.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "submitForm", function() { return _js_submit__WEBPACK_IMPORTED_MODULE_3__["submitForm"]; });
 
 
 
 
+
+
+const submitBtn = document.getElementById('submit')
+
+submitBtn.addEventListener('click', e => {
+  Object(_js_submit__WEBPACK_IMPORTED_MODULE_3__["submitForm"])(e)
+})
+
+
+
+/***/ }),
+
+/***/ "./src/client/js/submit.js":
+/*!*********************************!*\
+  !*** ./src/client/js/submit.js ***!
+  \*********************************/
+/*! exports provided: submitForm */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "submitForm", function() { return submitForm; });
+const submitForm = function (evt) {
+    evt.preventDefault();
+    const cityInput = document.getElementById('city').value;
+    const dateInput = document.getElementById('date').value;
+
+    async function submitToServer(city, date) {
+
+        const userInput = { city: city, date: date }
+
+        const response = await fetch('/userInput', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            credentials: 'same-origin',
+            body: JSON.stringify(userInput)
+
+        });
+        return response.json();
+
+
+    }
+
+    submitToServer(cityInput, dateInput)
+        .then(data => {
+            console.log(data);
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        })
+}
+
+
+/***/ }),
+
+/***/ "./src/client/media/background-image.png":
+/*!***********************************************!*\
+  !*** ./src/client/media/background-image.png ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "background-image.png");
+
+/***/ }),
+
+/***/ "./src/client/media/wanderlust-logo.png":
+/*!**********************************************!*\
+  !*** ./src/client/media/wanderlust-logo.png ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "wanderlust-logo.png");
+
+/***/ }),
+
+/***/ "./src/client/styles/_base.scss":
+/*!**************************************!*\
+  !*** ./src/client/styles/_base.scss ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_base_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./_base.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/client/styles/_base.scss");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_base_scss__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = (_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_base_scss__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
 
 /***/ }),
 
@@ -559,19 +748,6 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 
 /* harmony default export */ __webpack_exports__["default"] = (_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_style_scss__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
-
-/***/ }),
-
-/***/ "./src/media/wanderlust-logo.png":
-/*!***************************************!*\
-  !*** ./src/media/wanderlust-logo.png ***!
-  \***************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "wanderlust-logo.png");
 
 /***/ })
 
