@@ -23,6 +23,7 @@ const submitForm = function (evt) {
 
     submitToServer(cityInput, dateInput)
         .then(data => {
+            // response to send to UI
             console.log(data);
         })
         .catch((error) => {

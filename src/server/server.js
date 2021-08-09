@@ -2,7 +2,7 @@
 const dotenv = require('dotenv');
 dotenv.config();
 // Setup empty JS object to act as endpoint for User Input
-let projectData = { msg: 'test' };
+let projectData = {};
 
 // Require Express to run server and routes
 const express = require("express");
@@ -40,24 +40,27 @@ app.get("/sendData", function (req, res) {
 // Geonames API call
 let userInput = {}
 
-app.post("/userInput", (req, res) => {
+app.post("/userInput", async (req, res) => {
+  // date and city inputs go in the userInput
   userInput = req.body;
-  callGeoAPI()
-    .then(data => {
-      console.log(data);
-      projectData = data.geonames[0]
+  // Makes Api Call
+  await callGeoAPI()
+    .then(res => {
+      let data = res.geonames[0]
+      projectData = { long: data.lng, lat: data.lat, countryName: data.countryName }
     })
+    // send data to another API
     .then(res.send(projectData))
     .catch((error) => {
       console.error('Error:', error);
     })
 
 });
-
+// Call Geonames API function
 async function callGeoAPI() {
-  const country = 'US'
+  // const country = 'US'
   const username = process.env.GN_username;
-  const geonameBaseURL = `http://api.geonames.org/search?q=${userInput.city}&country=${country}&maxRows=1&type=json&username=${username}`
+  const geonameBaseURL = `http://api.geonames.org/search?q=${userInput.city}&maxRows=1&type=json&username=${username}`
 
   const response = await fetch(geonameBaseURL)
 
