@@ -7,6 +7,7 @@ const submitBtn = document.getElementById('submit')
 
 submitBtn.addEventListener('click', e => {
   submitForm(e)
+  console.log('button was clicked');
 })
 
 // todo- create countdown

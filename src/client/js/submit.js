@@ -1,30 +1,30 @@
-const submitForm = function (evt) {
-    evt.preventDefault();
+const submitForm = function (e) {
+    e.preventDefault();
     const cityInput = document.getElementById('city').value;
     const dateInput = document.getElementById('date').value;
 
-    async function submitToServer(city, date) {
+    const userInput = { city: cityInput, date: dateInput }
 
-        const userInput = { city: city, date: date }
+    async function submitToServer(input) {
 
-        const response = await fetch('/userInput', {
+        const response = await fetch('/makeCalls', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
+            mode: 'cors',
             credentials: 'same-origin',
-            body: JSON.stringify(userInput)
-
+            body: JSON.stringify(input)
         });
-        return response.json();
 
-
+        return response.json()
     }
 
-    submitToServer(cityInput, dateInput)
+    submitToServer(userInput)
         .then(data => {
             // response to send to UI
             console.log(data);
+
         })
         .catch((error) => {
             console.error('Error:', error);
