@@ -1,3 +1,5 @@
+import { updateUI } from "./updateUI";
+
 const submitForm = function (e) {
     e.preventDefault();
     const cityInput = document.getElementById('city').value;
@@ -23,7 +25,7 @@ const submitForm = function (e) {
     submitToServer(userInput)
         .then(data => {
             // response to send to UI
-            console.log(data);
+            updateUI(data)
 
         })
         .catch((error) => {

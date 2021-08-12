@@ -11,7 +11,7 @@
     <title>Wanderlust</title>
   </head>
   <body>
-    <div class="wrapper">
+    <section class="input-container">
       <div class="logo-wrapper"><h1 class="logo">WANDERLUST</h1></div>
       <form action="" class="form" id="form">
         <label for="city"></label>
@@ -25,9 +25,36 @@
         <input type="date" id="date" value="2022-01-02" />
         <button type="submit" class="submit" id="submit">Let's Go!</button>
       </form>
-    </div>
-    <div class="results" id="results"></div>
+    </section>
+    <section class="results" id="results">
+      <div class="trip-info" id="trip-info">
+        <div class="destination" id="destination">
+          <h2>Your Upcoming Trip Is 54 Days Away!</h2>
 
+          <ul>
+            <li>Destination: Walla Walla</li>
+            <li>Trip Date: 2022-01-02</li>
+          </ul>
+          <img
+            src="https://pixabay.com/get/gc93ac9f88435ca94ffc8535802582da4e4ba37e2d6db52d0b4854ee124f289ca1d93f67a2eee6498ed3ee40bc01a564f_640.jpg"
+            alt="image of Walla Walla"
+          />
+        </div>
+        <div class="weather" id="weather">
+          <h3>Current Weather in Walla Walla:</h3>
+          <ul class="weather-data" id="weather-data">
+            <li>94.7 ° F</li>
+            <li>Scattered clouds</li>
+            <li>
+              <img
+                src="https://www.weatherbit.io/static/img/icons/c02d.png"
+                alt="weather-icon"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
     <script src="main.js" type="text/javascript"></script>
   </body>
 </html>

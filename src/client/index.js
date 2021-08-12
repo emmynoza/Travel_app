@@ -2,6 +2,7 @@ import logo from '../client/media/wanderlust-logo.png'
 import styles from './styles/style.scss'
 import base from './styles/_base.scss'
 import { submitForm } from './js/submit'
+import { updateUI } from './js/updateUI'
 
 const submitBtn = document.getElementById('submit')
 
@@ -16,5 +17,6 @@ export {
   logo,
   styles,
   base,
-  submitForm
+  submitForm,
+  updateUI
 }

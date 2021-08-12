@@ -1,5 +1,5 @@
 {
-  "name": "travel_app",
+   "name": "travel_app",
   "version": "1.0.0",
   "description": "<hr>",
   "main": "server.js",
@@ -43,9 +43,5 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/emmynoza/Travel_app.git"
-  },
-  "bugs": {
-    "url": "https://github.com/emmynoza/Travel_app/issues"
-  },
-  "homepage": "https://github.com/emmynoza/Travel_app#readme"
+  }
 }

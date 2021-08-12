@@ -51,7 +51,7 @@ app.post('/makeCalls', async (req, res) => {
   await (fetch(geonameBaseURL)
     // get lat long countryName 
     .then(res => res.json())
-    .then(data => geonameData = { lng: data.geonames[0].lng, lat: data.geonames[0].lat, countryName: data.geonames[0].countryName }))
+    .then(data => geonameData = { lng: data.geonames[0].lng, lat: data.geonames[0].lat, countryName: data.geonames[0].countryName, city: data.geonames[0].toponymName }))
 
   // WEATHERBIT API
   const key = process.env.weather_KEY
@@ -62,15 +62,15 @@ app.post('/makeCalls', async (req, res) => {
   await (fetch(url)
     // get temperature and weather description
     .then(res => res.json())
-    .then(res => weatherData = { temp: res.data[0].temp, weather: res.data[0].weather.description }))
+    .then(res => weatherData = { temp: res.data[0].temp, weather: res.data[0].weather.description, icon: res.data[0].weather.icon }))
   // PIXABAY API
   const pixabayKey = process.env.pixabay_KEY
-  const pixabayURL = `https://pixabay.com/api/?key=${pixabayKey}&q=${userInput.city}&image_type=photo`
+  const pixabayURL = `https://pixabay.com/api/?key=${pixabayKey}&q=${userInput.city}&category=travel&image_type=photo`
   // Call API
   await (fetch(pixabayURL)
     .then(res => res.json())
     .then(data => { pixabayData = data.hits[0].webformatURL }))
-  projectData = { temp: weatherData.temp, weather: weatherData.weather.description, countryName: geonameData.countryName, date: userInput.date, img: pixabayData }
+  projectData = { temp: weatherData.temp, weather: weatherData.weather, icon: weatherData.icon, cityName: geonameData.city, countryName: geonameData.countryName, date: userInput.date, img: pixabayData }
 
   res.send(projectData)
 
