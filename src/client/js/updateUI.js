@@ -4,13 +4,12 @@ import { dateCountdown } from "./dateCountdown";
 function updateUI(data) {
     console.log(data);
     const results = document.getElementById('results')
-    const tripInfo = document.getElementById('trip-info')
 
     const destination = document.getElementById('destination');
     const weatherWrapper = document.getElementById('weather');
 
     destination.innerHTML = `
-    <h2> Your Upcoming Trip Is ${dateCountdown(data.date)} Days Away! </h2>
+    <h2> Your Upcoming Trip Is ${dateCountdown(data.date)} </h2>
     
         <ul>
             <li> Destination: ${data.cityName}, ${data.countryName}</li>

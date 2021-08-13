@@ -657,12 +657,21 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function dateCountdown(dateInput) {
+
     let d1 = new Date(dateInput.replace(/\-/g, '/'));
     let d2 = new Date(Object(_today__WEBPACK_IMPORTED_MODULE_0__["today"])().replace(/\-/g, '/'));
     // calculates from milliseconds to days
-    let difference = (d1.getTime() - d2.getTime()) / (1000 * 60 * 60 * 24);
+    const difference = (d1.getTime() - d2.getTime()) / (1000 * 60 * 60 * 24).toFixed(0);
 
-    return difference.toFixed(0)
+    if (difference > 1) {
+        return `${difference} Days Away!`
+    } else if (difference === 1) {
+        return `${difference} Day Away!`
+    } else if (difference === 0) {
+        return `Today!`
+    } else {
+        return `Expired`
+    }
 }
 
 
@@ -741,13 +750,12 @@ __webpack_require__.r(__webpack_exports__);
 function updateUI(data) {
     console.log(data);
     const results = document.getElementById('results')
-    const tripInfo = document.getElementById('trip-info')
 
     const destination = document.getElementById('destination');
     const weatherWrapper = document.getElementById('weather');
 
     destination.innerHTML = `
-    <h2> Your Upcoming Trip Is ${Object(_dateCountdown__WEBPACK_IMPORTED_MODULE_0__["dateCountdown"])(data.date)} Days Away! </h2>
+    <h2> Your Upcoming Trip Is ${Object(_dateCountdown__WEBPACK_IMPORTED_MODULE_0__["dateCountdown"])(data.date)} </h2>
     
         <ul>
             <li> Destination: ${data.cityName}, ${data.countryName}</li>
@@ -797,6 +805,7 @@ __webpack_require__.r(__webpack_exports__);
 function validateForm(e) {
     e.preventDefault();
     const cityInput = document.getElementById('city').value;
+    console.log(cityInput);
     const dateInput = document.getElementById('date').value;
 
     const userInput = { city: cityInput, date: dateInput }

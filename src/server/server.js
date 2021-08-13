@@ -28,14 +28,6 @@ const server = app.listen(port, listening);
 function listening() {
   console.log(`Server running on localhost:${port}`);
 }
-
-// Get Route
-app.get("/sendData", function (req, res) {
-  res.send(projectData);
-});
-// Project endpoint
-
-
 // Post Route
 
 app.post('/makeCalls', async (req, res) => {
@@ -70,6 +62,7 @@ app.post('/makeCalls', async (req, res) => {
   await (fetch(pixabayURL)
     .then(res => res.json())
     .then(data => { pixabayData = data.hits[0].webformatURL }))
+    .catch(error => { res.send(error) })
   projectData = { temp: weatherData.temp, weather: weatherData.weather, icon: weatherData.icon, cityName: geonameData.city, countryName: geonameData.countryName, date: userInput.date, img: pixabayData }
 
   res.send(projectData)
