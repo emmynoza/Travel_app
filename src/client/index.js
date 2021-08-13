@@ -5,12 +5,12 @@ import { submitForm } from './js/submit'
 import { updateUI } from './js/updateUI'
 import { dateCountdown } from './js/date'
 import { today } from './js/today'
+import { validateForm } from './js/validator'
 
 const submitBtn = document.getElementById('submit')
 
 submitBtn.addEventListener('click', e => {
-  submitForm(e)
-  console.log('button was clicked');
+  validateForm(e)
 })
 // sets input to today's date
 let dateControl = document.querySelector('input[type="date"]');

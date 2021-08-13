@@ -618,6 +618,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _js_today__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./js/today */ "./src/client/js/today.js");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "today", function() { return _js_today__WEBPACK_IMPORTED_MODULE_6__["today"]; });
 
+/* harmony import */ var _js_validator__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./js/validator */ "./src/client/js/validator.js");
+
 
 
 
@@ -629,7 +631,7 @@ __webpack_require__.r(__webpack_exports__);
 const submitBtn = document.getElementById('submit')
 
 submitBtn.addEventListener('click', e => {
-  Object(_js_submit__WEBPACK_IMPORTED_MODULE_3__["submitForm"])(e)
+  Object(_js_validator__WEBPACK_IMPORTED_MODULE_7__["validateForm"])(e)
   console.log('button was clicked');
 })
 // sets input to today's date
@@ -681,38 +683,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _updateUI__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./updateUI */ "./src/client/js/updateUI.js");
 
 
-const submitForm = function (e) {
-    e.preventDefault();
-    const cityInput = document.getElementById('city').value;
-    const dateInput = document.getElementById('date').value;
+async function submitForm(input) {
 
-    const userInput = { city: cityInput, date: dateInput }
+    const response = await fetch('/makeCalls', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        mode: 'cors',
+        credentials: 'same-origin',
+        body: JSON.stringify(input)
+    });
 
-    async function submitToServer(input) {
-
-        const response = await fetch('/makeCalls', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            mode: 'cors',
-            credentials: 'same-origin',
-            body: JSON.stringify(input)
-        });
-
-        return response.json()
-    }
-
-    submitToServer(userInput)
-        .then(data => {
-            // response to send to UI
-            Object(_updateUI__WEBPACK_IMPORTED_MODULE_0__["updateUI"])(data)
-
-        })
-        .catch((error) => {
-            console.error('Error:', error);
-        })
+    return response.json()
 }
+
 
 
 /***/ }),
@@ -758,7 +743,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function updateUI(data) {
-
+    console.log(data);
     const results = document.getElementById('results')
     const tripInfo = document.getElementById('trip-info')
 
@@ -792,6 +777,43 @@ function updateUI(data) {
     results.style.display = 'block'
     results.scrollIntoView({ behavior: "smooth" })
     Object(_date__WEBPACK_IMPORTED_MODULE_0__["dateCountdown"])(data.date)
+}
+
+
+
+/***/ }),
+
+/***/ "./src/client/js/validator.js":
+/*!************************************!*\
+  !*** ./src/client/js/validator.js ***!
+  \************************************/
+/*! exports provided: validateForm */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "validateForm", function() { return validateForm; });
+/* harmony import */ var _submit__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./submit */ "./src/client/js/submit.js");
+/* harmony import */ var _updateUI__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./updateUI */ "./src/client/js/updateUI.js");
+
+
+
+function validateForm(e) {
+    e.preventDefault();
+    const cityInput = document.getElementById('city').value;
+    const dateInput = document.getElementById('date').value;
+
+    const userInput = { city: cityInput, date: dateInput }
+
+    cityInput === '' || dateInput === '' ? console.log('error') : Object(_submit__WEBPACK_IMPORTED_MODULE_0__["submitForm"])(userInput).then(data => {
+        // response to send to UI
+        Object(_updateUI__WEBPACK_IMPORTED_MODULE_1__["updateUI"])(data)
+
+    })
+        .catch((error) => {
+            console.error('Error:', error);
+        })
+
 }
 
 

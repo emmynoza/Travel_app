@@ -65,7 +65,7 @@ app.post('/makeCalls', async (req, res) => {
     .then(res => weatherData = { temp: res.data[0].temp, weather: res.data[0].weather.description, icon: res.data[0].weather.icon }))
   // PIXABAY API
   const pixabayKey = process.env.pixabay_KEY
-  const pixabayURL = `https://pixabay.com/api/?key=${pixabayKey}&q=${userInput.city}&category=travel&image_type=photo`
+  const pixabayURL = `https://pixabay.com/api/?key=${pixabayKey}&q=${userInput.city}&category=travel+places&image_type=photo`
   // Call API
   await (fetch(pixabayURL)
     .then(res => res.json())

@@ -2,7 +2,7 @@ import { dateCountdown } from "./date";
 
 
 function updateUI(data) {
-
+    console.log(data);
     const results = document.getElementById('results')
     const tripInfo = document.getElementById('trip-info')
 
