@@ -3,7 +3,7 @@ import styles from './styles/style.scss'
 import base from './styles/_base.scss'
 import { submitForm } from './js/submit'
 import { updateUI } from './js/updateUI'
-import { dateCountdown } from './js/date'
+import { dateCountdown } from './js/dateCountdown'
 import { today } from './js/today'
 import { validateForm } from './js/validator'
 

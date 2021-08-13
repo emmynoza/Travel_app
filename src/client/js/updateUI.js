@@ -1,4 +1,4 @@
-import { dateCountdown } from "./date";
+import { dateCountdown } from "./dateCountdown";
 
 
 function updateUI(data) {

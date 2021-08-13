@@ -612,8 +612,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _js_updateUI__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/updateUI */ "./src/client/js/updateUI.js");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "updateUI", function() { return _js_updateUI__WEBPACK_IMPORTED_MODULE_4__["updateUI"]; });
 
-/* harmony import */ var _js_date__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./js/date */ "./src/client/js/date.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "dateCountdown", function() { return _js_date__WEBPACK_IMPORTED_MODULE_5__["dateCountdown"]; });
+/* harmony import */ var _js_dateCountdown__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./js/dateCountdown */ "./src/client/js/dateCountdown.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "dateCountdown", function() { return _js_dateCountdown__WEBPACK_IMPORTED_MODULE_5__["dateCountdown"]; });
 
 /* harmony import */ var _js_today__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./js/today */ "./src/client/js/today.js");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "today", function() { return _js_today__WEBPACK_IMPORTED_MODULE_6__["today"]; });
@@ -632,7 +632,6 @@ const submitBtn = document.getElementById('submit')
 
 submitBtn.addEventListener('click', e => {
   Object(_js_validator__WEBPACK_IMPORTED_MODULE_7__["validateForm"])(e)
-  console.log('button was clicked');
 })
 // sets input to today's date
 let dateControl = document.querySelector('input[type="date"]');
@@ -644,10 +643,10 @@ dateControl.value = Object(_js_today__WEBPACK_IMPORTED_MODULE_6__["today"])();
 
 /***/ }),
 
-/***/ "./src/client/js/date.js":
-/*!*******************************!*\
-  !*** ./src/client/js/date.js ***!
-  \*******************************/
+/***/ "./src/client/js/dateCountdown.js":
+/*!****************************************!*\
+  !*** ./src/client/js/dateCountdown.js ***!
+  \****************************************/
 /*! exports provided: dateCountdown */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -680,9 +679,6 @@ function dateCountdown(dateInput) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "submitForm", function() { return submitForm; });
-/* harmony import */ var _updateUI__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./updateUI */ "./src/client/js/updateUI.js");
-
-
 async function submitForm(input) {
 
     const response = await fetch('/makeCalls', {
@@ -738,7 +734,7 @@ function today() {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "updateUI", function() { return updateUI; });
-/* harmony import */ var _date__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./date */ "./src/client/js/date.js");
+/* harmony import */ var _dateCountdown__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./dateCountdown */ "./src/client/js/dateCountdown.js");
 
 
 
@@ -751,7 +747,7 @@ function updateUI(data) {
     const weatherWrapper = document.getElementById('weather');
 
     destination.innerHTML = `
-    <h2> Your Upcoming Trip Is ${Object(_date__WEBPACK_IMPORTED_MODULE_0__["dateCountdown"])(data.date)} Days Away! </h2>
+    <h2> Your Upcoming Trip Is ${Object(_dateCountdown__WEBPACK_IMPORTED_MODULE_0__["dateCountdown"])(data.date)} Days Away! </h2>
     
         <ul>
             <li> Destination: ${data.cityName}, ${data.countryName}</li>
@@ -776,7 +772,7 @@ function updateUI(data) {
     `
     results.style.display = 'block'
     results.scrollIntoView({ behavior: "smooth" })
-    Object(_date__WEBPACK_IMPORTED_MODULE_0__["dateCountdown"])(data.date)
+    Object(_dateCountdown__WEBPACK_IMPORTED_MODULE_0__["dateCountdown"])(data.date)
 }
 
 
@@ -805,11 +801,11 @@ function validateForm(e) {
 
     const userInput = { city: cityInput, date: dateInput }
 
-    cityInput === '' || dateInput === '' ? console.log('error') : Object(_submit__WEBPACK_IMPORTED_MODULE_0__["submitForm"])(userInput).then(data => {
-        // response to send to UI
-        Object(_updateUI__WEBPACK_IMPORTED_MODULE_1__["updateUI"])(data)
-
-    })
+    cityInput === '' || dateInput === '' ? console.log('error') : Object(_submit__WEBPACK_IMPORTED_MODULE_0__["submitForm"])(userInput)
+        .then(data => {
+            // response to send to UI
+            Object(_updateUI__WEBPACK_IMPORTED_MODULE_1__["updateUI"])(data)
+        })
         .catch((error) => {
             console.error('Error:', error);
         })
