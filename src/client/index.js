@@ -3,6 +3,8 @@ import styles from './styles/style.scss'
 import base from './styles/_base.scss'
 import { submitForm } from './js/submit'
 import { updateUI } from './js/updateUI'
+import { dateCountdown } from './js/date'
+import { today } from './js/today'
 
 const submitBtn = document.getElementById('submit')
 
@@ -10,13 +12,18 @@ submitBtn.addEventListener('click', e => {
   submitForm(e)
   console.log('button was clicked');
 })
-
-// todo- create countdown
+// sets input to today's date
+let dateControl = document.querySelector('input[type="date"]');
+dateControl.setAttribute('min', today());
+dateControl.setAttribute('max', '2121-01-01')
+dateControl.value = today();
 
 export {
   logo,
   styles,
   base,
   submitForm,
-  updateUI
+  updateUI,
+  dateCountdown,
+  today
 }

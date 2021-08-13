@@ -111,7 +111,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()(_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default.a);
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(_media_background_image_png__WEBPACK_IMPORTED_MODULE_3__["default"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "/* SCSS RGB */\n* {\n  box-sizing: border-box;\n  padding: 0;\n  margin: 0; }\n\nbody {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") no-repeat center;\n  background-size: cover;\n  background-attachment: fixed;\n  width: 100%;\n  height: 100vh; }\n\n.input-container {\n  height: 100vh;\n  padding: 10px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center; }\n  .input-container .logo {\n    font-size: 6vh;\n    font-family: \"Pacifico\", cursive;\n    letter-spacing: 8px;\n    color: #ffec1f; }\n  .input-container .form {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center; }\n    .input-container .form input,\n    .input-container .form .submit {\n      height: 10vh;\n      text-align: center;\n      font-size: 2vh;\n      width: 100%;\n      margin: 2.5vh;\n      border: 0.5vh solid #4da8e0;\n      border-radius: 20px; }\n      .input-container .form input:hover,\n      .input-container .form .submit:hover {\n        border: 0.5vh solid #e16900; }\n    .input-container .form .submit {\n      cursor: pointer; }\n\n.results {\n  height: 100vh;\n  position: relative; }\n  .results .trip-info {\n    border: 0.5vw solid #ffec1f;\n    border-radius: 15px;\n    background: rgba(255, 255, 255, 0.4);\n    position: absolute;\n    left: 50%;\n    top: 50%;\n    transform: translate(-50%, -50%);\n    width: 90vw;\n    height: 80vh;\n    display: flex;\n    flex-direction: column;\n    align-items: center; }\n    .results .trip-info h2 {\n      margin: 1rem 0;\n      font-size: 2rem;\n      text-align: center; }\n    .results .trip-info li {\n      list-style: none;\n      font-size: 1.5rem; }\n    .results .trip-info .destination li,\n    .results .trip-info .destination img {\n      margin: 0.5rem 0; }\n    .results .trip-info .destination img {\n      border-radius: 15px; }\n\n.weather {\n  width: 100%;\n  text-align: center; }\n  .weather h3 {\n    font-size: 2rem; }\n  .weather .weather-data {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-evenly;\n    align-items: center; }\n", "",{"version":3,"sources":["webpack://./src/client/styles/_base.scss"],"names":[],"mappings":"AAAA,aAAa;AACb;EACE,sBAAsB;EACtB,UAAU;EACV,SAAS,EAAE;;AAEb;EACE,oEAA+D;EAC/D,sBAAsB;EACtB,4BAA4B;EAC5B,WAAW;EACX,aAAa,EAAE;;AAEjB;EACE,aAAa;EACb,aAAa;EACb,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,uBAAuB,EAAE;EACzB;IACE,cAAc;IACd,gCAAgC;IAChC,mBAAmB;IACnB,cAAc,EAAE;EAClB;IACE,aAAa;IACb,sBAAsB;IACtB,mBAAmB;IACnB,uBAAuB,EAAE;IACzB;;MAEE,YAAY;MACZ,kBAAkB;MAClB,cAAc;MACd,WAAW;MACX,aAAa;MACb,2BAA2B;MAC3B,mBAAmB,EAAE;MACrB;;QAEE,2BAA2B,EAAE;IACjC;MACE,eAAe,EAAE;;AAEvB;EACE,aAAa;EACb,kBAAkB,EAAE;EACpB;IACE,2BAA2B;IAC3B,mBAAmB;IACnB,oCAAoC;IACpC,kBAAkB;IAClB,SAAS;IACT,QAAQ;IACR,gCAAgC;IAChC,WAAW;IACX,YAAY;IACZ,aAAa;IACb,sBAAsB;IACtB,mBAAmB,EAAE;IACrB;MACE,cAAc;MACd,eAAe;MACf,kBAAkB,EAAE;IACtB;MACE,gBAAgB;MAChB,iBAAiB,EAAE;IACrB;;MAEE,gBAAgB,EAAE;IACpB;MACE,mBAAmB,EAAE;;AAE3B;EACE,WAAW;EACX,kBAAkB,EAAE;EACpB;IACE,eAAe,EAAE;EACnB;IACE,aAAa;IACb,mBAAmB;IACnB,6BAA6B;IAC7B,mBAAmB,EAAE","sourcesContent":["/* SCSS RGB */\n* {\n  box-sizing: border-box;\n  padding: 0;\n  margin: 0; }\n\nbody {\n  background: url(../media/background-image.png) no-repeat center;\n  background-size: cover;\n  background-attachment: fixed;\n  width: 100%;\n  height: 100vh; }\n\n.input-container {\n  height: 100vh;\n  padding: 10px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center; }\n  .input-container .logo {\n    font-size: 6vh;\n    font-family: \"Pacifico\", cursive;\n    letter-spacing: 8px;\n    color: #ffec1f; }\n  .input-container .form {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center; }\n    .input-container .form input,\n    .input-container .form .submit {\n      height: 10vh;\n      text-align: center;\n      font-size: 2vh;\n      width: 100%;\n      margin: 2.5vh;\n      border: 0.5vh solid #4da8e0;\n      border-radius: 20px; }\n      .input-container .form input:hover,\n      .input-container .form .submit:hover {\n        border: 0.5vh solid #e16900; }\n    .input-container .form .submit {\n      cursor: pointer; }\n\n.results {\n  height: 100vh;\n  position: relative; }\n  .results .trip-info {\n    border: 0.5vw solid #ffec1f;\n    border-radius: 15px;\n    background: rgba(255, 255, 255, 0.4);\n    position: absolute;\n    left: 50%;\n    top: 50%;\n    transform: translate(-50%, -50%);\n    width: 90vw;\n    height: 80vh;\n    display: flex;\n    flex-direction: column;\n    align-items: center; }\n    .results .trip-info h2 {\n      margin: 1rem 0;\n      font-size: 2rem;\n      text-align: center; }\n    .results .trip-info li {\n      list-style: none;\n      font-size: 1.5rem; }\n    .results .trip-info .destination li,\n    .results .trip-info .destination img {\n      margin: 0.5rem 0; }\n    .results .trip-info .destination img {\n      border-radius: 15px; }\n\n.weather {\n  width: 100%;\n  text-align: center; }\n  .weather h3 {\n    font-size: 2rem; }\n  .weather .weather-data {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-evenly;\n    align-items: center; }\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, "/* SCSS RGB */\n* {\n  box-sizing: border-box;\n  padding: 0;\n  margin: 0; }\n\nbody {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") no-repeat center;\n  background-size: cover;\n  background-attachment: fixed;\n  width: 100%;\n  height: 100vh; }\n\n.input-container {\n  height: 100vh;\n  padding: 10px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center; }\n  .input-container .logo {\n    font-size: 6vh;\n    font-family: \"Pacifico\", cursive;\n    letter-spacing: 8px;\n    color: #ffec1f; }\n  .input-container .form {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center; }\n    .input-container .form input,\n    .input-container .form .submit {\n      height: 10vh;\n      text-align: center;\n      font-size: 2vh;\n      width: 100%;\n      margin: 2.5vh;\n      border: 0.5vh solid #4da8e0;\n      border-radius: 20px; }\n      .input-container .form input:hover,\n      .input-container .form .submit:hover {\n        border: 0.5vh solid #e16900; }\n    .input-container .form .submit {\n      cursor: pointer; }\n\n.results {\n  height: 100vh;\n  position: relative; }\n  .results .trip-info {\n    border: 0.5vw solid #ffec1f;\n    border-radius: 15px;\n    background: rgba(255, 255, 255, 0.4);\n    position: absolute;\n    left: 50%;\n    top: 50%;\n    transform: translate(-50%, -50%);\n    width: 90%;\n    max-height: 80vh;\n    display: flex;\n    flex-direction: column;\n    align-items: center; }\n    .results .trip-info h2 {\n      margin: 2rem 0;\n      font-size: 3rem;\n      text-align: center; }\n    .results .trip-info li {\n      list-style: none;\n      font-size: 1.5rem; }\n    .results .trip-info .destination {\n      display: flex;\n      flex-direction: column; }\n      .results .trip-info .destination li {\n        margin: 0.5rem 0;\n        font-size: 2.5rem; }\n      .results .trip-info .destination img {\n        border-radius: 15px; }\n\n.weather {\n  width: 100%;\n  text-align: center; }\n  .weather h3 {\n    font-size: 2.5rem;\n    margin: 1rem; }\n  .weather .weather-data {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-evenly;\n    align-items: center; }\n    .weather .weather-data li {\n      font-size: 2.5rem; }\n", "",{"version":3,"sources":["webpack://./src/client/styles/_base.scss"],"names":[],"mappings":"AAAA,aAAa;AACb;EACE,sBAAsB;EACtB,UAAU;EACV,SAAS,EAAE;;AAEb;EACE,oEAA+D;EAC/D,sBAAsB;EACtB,4BAA4B;EAC5B,WAAW;EACX,aAAa,EAAE;;AAEjB;EACE,aAAa;EACb,aAAa;EACb,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,uBAAuB,EAAE;EACzB;IACE,cAAc;IACd,gCAAgC;IAChC,mBAAmB;IACnB,cAAc,EAAE;EAClB;IACE,aAAa;IACb,sBAAsB;IACtB,mBAAmB;IACnB,uBAAuB,EAAE;IACzB;;MAEE,YAAY;MACZ,kBAAkB;MAClB,cAAc;MACd,WAAW;MACX,aAAa;MACb,2BAA2B;MAC3B,mBAAmB,EAAE;MACrB;;QAEE,2BAA2B,EAAE;IACjC;MACE,eAAe,EAAE;;AAEvB;EACE,aAAa;EACb,kBAAkB,EAAE;EACpB;IACE,2BAA2B;IAC3B,mBAAmB;IACnB,oCAAoC;IACpC,kBAAkB;IAClB,SAAS;IACT,QAAQ;IACR,gCAAgC;IAChC,UAAU;IACV,gBAAgB;IAChB,aAAa;IACb,sBAAsB;IACtB,mBAAmB,EAAE;IACrB;MACE,cAAc;MACd,eAAe;MACf,kBAAkB,EAAE;IACtB;MACE,gBAAgB;MAChB,iBAAiB,EAAE;IACrB;MACE,aAAa;MACb,sBAAsB,EAAE;MACxB;QACE,gBAAgB;QAChB,iBAAiB,EAAE;MACrB;QACE,mBAAmB,EAAE;;AAE7B;EACE,WAAW;EACX,kBAAkB,EAAE;EACpB;IACE,iBAAiB;IACjB,YAAY,EAAE;EAChB;IACE,aAAa;IACb,mBAAmB;IACnB,6BAA6B;IAC7B,mBAAmB,EAAE;IACrB;MACE,iBAAiB,EAAE","sourcesContent":["/* SCSS RGB */\n* {\n  box-sizing: border-box;\n  padding: 0;\n  margin: 0; }\n\nbody {\n  background: url(../media/background-image.png) no-repeat center;\n  background-size: cover;\n  background-attachment: fixed;\n  width: 100%;\n  height: 100vh; }\n\n.input-container {\n  height: 100vh;\n  padding: 10px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center; }\n  .input-container .logo {\n    font-size: 6vh;\n    font-family: \"Pacifico\", cursive;\n    letter-spacing: 8px;\n    color: #ffec1f; }\n  .input-container .form {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center; }\n    .input-container .form input,\n    .input-container .form .submit {\n      height: 10vh;\n      text-align: center;\n      font-size: 2vh;\n      width: 100%;\n      margin: 2.5vh;\n      border: 0.5vh solid #4da8e0;\n      border-radius: 20px; }\n      .input-container .form input:hover,\n      .input-container .form .submit:hover {\n        border: 0.5vh solid #e16900; }\n    .input-container .form .submit {\n      cursor: pointer; }\n\n.results {\n  height: 100vh;\n  position: relative; }\n  .results .trip-info {\n    border: 0.5vw solid #ffec1f;\n    border-radius: 15px;\n    background: rgba(255, 255, 255, 0.4);\n    position: absolute;\n    left: 50%;\n    top: 50%;\n    transform: translate(-50%, -50%);\n    width: 90%;\n    max-height: 80vh;\n    display: flex;\n    flex-direction: column;\n    align-items: center; }\n    .results .trip-info h2 {\n      margin: 2rem 0;\n      font-size: 3rem;\n      text-align: center; }\n    .results .trip-info li {\n      list-style: none;\n      font-size: 1.5rem; }\n    .results .trip-info .destination {\n      display: flex;\n      flex-direction: column; }\n      .results .trip-info .destination li {\n        margin: 0.5rem 0;\n        font-size: 2.5rem; }\n      .results .trip-info .destination img {\n        border-radius: 15px; }\n\n.weather {\n  width: 100%;\n  text-align: center; }\n  .weather h3 {\n    font-size: 2.5rem;\n    margin: 1rem; }\n  .weather .weather-data {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-evenly;\n    align-items: center; }\n    .weather .weather-data li {\n      font-size: 2.5rem; }\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -592,7 +592,7 @@ module.exports = function (list, options) {
 /*!*****************************!*\
   !*** ./src/client/index.js ***!
   \*****************************/
-/*! exports provided: logo, styles, base, submitForm, updateUI */
+/*! exports provided: logo, styles, base, submitForm, updateUI, dateCountdown, today */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -612,6 +612,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _js_updateUI__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/updateUI */ "./src/client/js/updateUI.js");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "updateUI", function() { return _js_updateUI__WEBPACK_IMPORTED_MODULE_4__["updateUI"]; });
 
+/* harmony import */ var _js_date__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./js/date */ "./src/client/js/date.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "dateCountdown", function() { return _js_date__WEBPACK_IMPORTED_MODULE_5__["dateCountdown"]; });
+
+/* harmony import */ var _js_today__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./js/today */ "./src/client/js/today.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "today", function() { return _js_today__WEBPACK_IMPORTED_MODULE_6__["today"]; });
+
+
+
 
 
 
@@ -624,8 +632,37 @@ submitBtn.addEventListener('click', e => {
   Object(_js_submit__WEBPACK_IMPORTED_MODULE_3__["submitForm"])(e)
   console.log('button was clicked');
 })
+// sets input to today's date
+let dateControl = document.querySelector('input[type="date"]');
+dateControl.setAttribute('min', Object(_js_today__WEBPACK_IMPORTED_MODULE_6__["today"])());
+dateControl.setAttribute('max', '2121-01-01')
+dateControl.value = Object(_js_today__WEBPACK_IMPORTED_MODULE_6__["today"])();
 
-// todo- create countdown
+
+
+/***/ }),
+
+/***/ "./src/client/js/date.js":
+/*!*******************************!*\
+  !*** ./src/client/js/date.js ***!
+  \*******************************/
+/*! exports provided: dateCountdown */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "dateCountdown", function() { return dateCountdown; });
+/* harmony import */ var _today__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./today */ "./src/client/js/today.js");
+
+
+function dateCountdown(dateInput) {
+    let d1 = new Date(dateInput.replace(/\-/g, '/'));
+    let d2 = new Date(Object(_today__WEBPACK_IMPORTED_MODULE_0__["today"])().replace(/\-/g, '/'));
+    // calculates from milliseconds to days
+    let difference = (d1.getTime() - d2.getTime()) / (1000 * 60 * 60 * 24);
+
+    return difference.toFixed(0)
+}
 
 
 
@@ -680,6 +717,32 @@ const submitForm = function (e) {
 
 /***/ }),
 
+/***/ "./src/client/js/today.js":
+/*!********************************!*\
+  !*** ./src/client/js/today.js ***!
+  \********************************/
+/*! exports provided: today */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "today", function() { return today; });
+function today() {
+
+    let today = new Date();
+    let dd = String(today.getDate()).padStart(2, '0');
+    let mm = String(today.getMonth() + 1).padStart(2, '0');
+    let yyyy = today.getFullYear();
+
+    today = yyyy + '-' + mm + '-' + dd;
+
+    return today
+
+}
+
+
+/***/ }),
+
 /***/ "./src/client/js/updateUI.js":
 /*!***********************************!*\
   !*** ./src/client/js/updateUI.js ***!
@@ -690,10 +753,12 @@ const submitForm = function (e) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "updateUI", function() { return updateUI; });
+/* harmony import */ var _date__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./date */ "./src/client/js/date.js");
+
 
 
 function updateUI(data) {
-    console.log(data);
+
     const results = document.getElementById('results')
     const tripInfo = document.getElementById('trip-info')
 
@@ -701,11 +766,12 @@ function updateUI(data) {
     const weatherWrapper = document.getElementById('weather');
 
     destination.innerHTML = `
-    <h2> Your Upcoming Trip Is 54 Days Away! </h2>
+    <h2> Your Upcoming Trip Is ${Object(_date__WEBPACK_IMPORTED_MODULE_0__["dateCountdown"])(data.date)} Days Away! </h2>
     
         <ul>
             <li> Destination: ${data.cityName}, ${data.countryName}</li>
             <li> Trip Date: ${data.date} </li>
+            
         </ul>
     <img
     src=${data.img}
@@ -725,6 +791,7 @@ function updateUI(data) {
     `
     results.style.display = 'block'
     results.scrollIntoView({ behavior: "smooth" })
+    Object(_date__WEBPACK_IMPORTED_MODULE_0__["dateCountdown"])(data.date)
 }
 
 

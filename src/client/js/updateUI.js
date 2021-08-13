@@ -1,7 +1,8 @@
+import { dateCountdown } from "./date";
 
 
 function updateUI(data) {
-    console.log(data);
+
     const results = document.getElementById('results')
     const tripInfo = document.getElementById('trip-info')
 
@@ -9,11 +10,12 @@ function updateUI(data) {
     const weatherWrapper = document.getElementById('weather');
 
     destination.innerHTML = `
-    <h2> Your Upcoming Trip Is 54 Days Away! </h2>
+    <h2> Your Upcoming Trip Is ${dateCountdown(data.date)} Days Away! </h2>
     
         <ul>
             <li> Destination: ${data.cityName}, ${data.countryName}</li>
             <li> Trip Date: ${data.date} </li>
+            
         </ul>
     <img
     src=${data.img}
@@ -33,6 +35,7 @@ function updateUI(data) {
     `
     results.style.display = 'block'
     results.scrollIntoView({ behavior: "smooth" })
+    dateCountdown(data.date)
 }
 
 export { updateUI }
