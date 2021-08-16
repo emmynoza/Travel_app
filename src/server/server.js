@@ -40,7 +40,7 @@ app.post('/makeCalls', async (req, res) => {
   const username = process.env.GN_username;
   const geonameBaseURL = `http://api.geonames.org/search?q=${userInput.city}&maxRows=1&type=json&username=${username}`
 
-  await (fetch(geonameBaseURL)
+  await (fetch(encodeURI(geonameBaseURL))
     // get lat long countryName 
     .then(res => res.json())
     .then(data => geonameData = { lng: data.geonames[0].lng, lat: data.geonames[0].lat, countryName: data.geonames[0].countryName, city: data.geonames[0].toponymName }))
@@ -57,13 +57,15 @@ app.post('/makeCalls', async (req, res) => {
     .then(res => weatherData = { temp: res.data[0].temp, weather: res.data[0].weather.description, icon: res.data[0].weather.icon }))
   // PIXABAY API
   const pixabayKey = process.env.pixabay_KEY
-  const pixabayURL = `https://pixabay.com/api/?key=${pixabayKey}&q=${userInput.city}&category=places&image_type=photo&orientation=horizontal&safesearch=true`
+  const pixabayURL = `https://pixabay.com/api/?key=${pixabayKey}&q=${geonameData.city}&category=places&image_type=photo&orientation=horizontal&safesearch=true`
   // Call API
-  await (fetch(pixabayURL)
+
+  await (fetch(encodeURI(pixabayURL))
     .then(res => res.json())
-    .then(data => { pixabayData = data.hits[0].webformatURL }))
-    .catch(error => { res.send(error) })
-  projectData = { temp: weatherData.temp, weather: weatherData.weather, icon: weatherData.icon, cityName: geonameData.city, countryName: geonameData.countryName, date: userInput.date, img: pixabayData }
+    .then(data => { pixabayData = { img: data.hits[0].webformatURL } })
+    .catch(error => { res.send(error), console.log(error); }))
+
+  projectData = { temp: weatherData.temp, weather: weatherData.weather, icon: weatherData.icon, cityName: geonameData.city, countryName: geonameData.countryName, date: userInput.date, img: pixabayData.img }
 
   res.send(projectData)
 

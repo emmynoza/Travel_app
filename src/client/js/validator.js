@@ -4,10 +4,10 @@ import { updateUI } from "./updateUI";
 function validateForm(e) {
     e.preventDefault();
     const cityInput = document.getElementById('city').value;
-    console.log(cityInput);
     const dateInput = document.getElementById('date').value;
 
     const userInput = { city: cityInput, date: dateInput }
+    console.log(userInput);
 
     cityInput === '' || dateInput === '' ? console.log('error') : submitForm(userInput)
         .then(data => {

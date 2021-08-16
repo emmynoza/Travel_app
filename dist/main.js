@@ -699,7 +699,6 @@ async function submitForm(input) {
         credentials: 'same-origin',
         body: JSON.stringify(input)
     });
-
     return response.json()
 }
 
@@ -805,10 +804,10 @@ __webpack_require__.r(__webpack_exports__);
 function validateForm(e) {
     e.preventDefault();
     const cityInput = document.getElementById('city').value;
-    console.log(cityInput);
     const dateInput = document.getElementById('date').value;
 
     const userInput = { city: cityInput, date: dateInput }
+    console.log(userInput);
 
     cityInput === '' || dateInput === '' ? console.log('error') : Object(_submit__WEBPACK_IMPORTED_MODULE_0__["submitForm"])(userInput)
         .then(data => {
