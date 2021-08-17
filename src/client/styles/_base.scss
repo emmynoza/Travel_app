@@ -16,7 +16,7 @@ $spanish-viridian: rgba(12, 124, 89, 1);
   background: url(../media/background-image.png) no-repeat center;
   background-size: cover;
   background-attachment: fixed;
-  max-width: 400px;
+  max-width: 449px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -24,7 +24,6 @@ $spanish-viridian: rgba(12, 124, 89, 1);
 .input-container {
   min-height: 100vh;
   padding: 10px;
-  // border: 2px solid red;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,6 +32,7 @@ $spanish-viridian: rgba(12, 124, 89, 1);
     letter-spacing: 8px;
     color: $middle-yellow;
     text-align: center;
+    font-size: 1.75rem;
   }
   .form {
     display: flex;
@@ -60,6 +60,12 @@ $spanish-viridian: rgba(12, 124, 89, 1);
         outline: 0;
       }
     }
+    .submit:hover {
+      background: $spanish-orange;
+      color: #fff;
+      font-size: 1.5rem;
+      transition: font-size ease-in 500ms;
+    }
   }
 }
 // Results
@@ -67,6 +73,7 @@ $spanish-viridian: rgba(12, 124, 89, 1);
 .results {
   min-height: 100vh;
   position: relative;
+  display: none;
 
   // display: none;
   .trip-info {
@@ -95,7 +102,7 @@ $spanish-viridian: rgba(12, 124, 89, 1);
         font-size: 1.2rem;
       }
       img {
-        max-width: 100%;
+        width: 100%;
       }
     }
   }

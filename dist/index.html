@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -11,49 +12,50 @@
     <title>Wanderlust</title>
   </head>
   <body>
-    <section class="input-container">
-      <div class="logo-wrapper"><h1 class="logo">WANDERLUST</h1></div>
-      <form action="" class="form" id="form">
-        <label for="city"></label>
-        <input
-          type="text"
-          class="city"
-          id="city"
-          placeholder="Enter Your Destination"
-        />
-        <label for="date"></label>
-        <input type="date" id="date" value="2022-01-02" />
-        <button type="submit" class="submit" id="submit">Let's Go!</button>
-      </form>
-    </section>
-    <section class="results" id="results">
-      <div class="trip-info" id="trip-info">
-        <div class="destination" id="destination">
-          <h2>Your Upcoming Trip Is 54 Days Away!</h2>
-
-          <ul>
-            <li>Destination: Walla Walla</li>
-            <li>Trip Date: 2022-01-02</li>
-          </ul>
-          <img
-            src="https://pixabay.com/get/g5e69d54f4978d45529254e68fc797429af07c2be1707fcc7fb8efc094d0039419d0850d7c0dc1fa03b1c172c489ac31617feb95601c6f95c5c718c432dc1fa79_640.jpg"
-            alt="image of Walla Walla"
+    <div class="container">
+      <section class="input-container">
+        <div class="logo-wrapper"><h1 class="logo">WANDERLUST</h1></div>
+        <form action="" class="form" id="form">
+          <label for="city"></label>
+          <input
+            type="text"
+            class="city"
+            id="city"
+            placeholder="Enter Your Destination"
           />
+          <label for="date"></label>
+          <input type="date" id="date" placeholder="Enter Date" />
+          <button type="submit" class="submit" id="submit">Let's Go!</button>
+        </form>
+      </section>
+      <section class="results" id="results">
+        <div class="trip-info" id="trip-info">
+          <div class="destination" id="destination">
+            <h2>Your Upcoming Trip Is 54 Days Away!</h2>
+            <img
+              src="https://pixabay.com/get/g52291cdb71ac8e9c71d9b41f1b3fbf4d6d07cee5c5aa0baae5d04bbf098884e1fc0f90dec759bb48ad3a33df0c728efdc981b3bcaea181403a764f3ad2097993_640.jpg"
+              alt="image of Walla Walla"
+            />
+            <ul>
+              <li>Destination: Walla Walla</li>
+              <li>Trip Date: 2022-01-02</li>
+            </ul>
+          </div>
+          <div class="weather" id="weather">
+            <h3>Current Weather in Walla Walla:</h3>
+            <ul class="weather-data" id="weather-data">
+              <li>94.7 ° F</li>
+              <li>Scattered clouds</li>
+              <li>
+                <img
+                  src="https://www.weatherbit.io/static/img/icons/c02d.png"
+                  alt="weather-icon"
+                />
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="weather" id="weather">
-          <h3>Current Weather in Walla Walla:</h3>
-          <ul class="weather-data" id="weather-data">
-            <li>94.7 ° F</li>
-            <li>Scattered clouds</li>
-            <li>
-              <img
-                src="https://www.weatherbit.io/static/img/icons/c02d.png"
-                alt="weather-icon"
-              />
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
   <script type="text/javascript" src="main.js"></script></body>
 </html>

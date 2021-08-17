@@ -111,7 +111,32 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()(_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default.a);
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(_media_background_image_png__WEBPACK_IMPORTED_MODULE_3__["default"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "/* SCSS RGB */\n* {\n  box-sizing: border-box;\n  padding: 0;\n  margin: 0; }\n\nbody {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") no-repeat center;\n  background-size: cover;\n  background-attachment: fixed;\n  width: 100%;\n  height: 100vh; }\n\n.input-container {\n  height: 100vh;\n  padding: 10px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center; }\n  .input-container .logo {\n    font-size: 6vh;\n    font-family: \"Pacifico\", cursive;\n    letter-spacing: 8px;\n    color: #ffec1f; }\n  .input-container .form {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center; }\n    .input-container .form input,\n    .input-container .form .submit {\n      height: 10vh;\n      text-align: center;\n      font-size: 2vh;\n      width: 100%;\n      margin: 2.5vh;\n      border: 0.5vh solid #4da8e0;\n      border-radius: 20px; }\n      .input-container .form input:hover,\n      .input-container .form .submit:hover {\n        border: 0.5vh solid #e16900; }\n    .input-container .form .submit {\n      cursor: pointer; }\n\n.results {\n  height: 100vh;\n  position: relative; }\n  .results .trip-info {\n    border: 0.5vw solid #ffec1f;\n    border-radius: 15px;\n    background: rgba(255, 255, 255, 0.4);\n    position: absolute;\n    left: 50%;\n    top: 50%;\n    transform: translate(-50%, -50%);\n    width: 90%;\n    max-height: 80vh;\n    display: flex;\n    flex-direction: column;\n    align-items: center; }\n    .results .trip-info h2 {\n      margin: 2rem 0;\n      font-size: 3rem;\n      text-align: center; }\n    .results .trip-info li {\n      list-style: none;\n      font-size: 1.5rem; }\n    .results .trip-info .destination {\n      display: flex;\n      flex-direction: column; }\n      .results .trip-info .destination li {\n        margin: 0.5rem 0;\n        font-size: 2.5rem; }\n      .results .trip-info .destination img {\n        border-radius: 15px; }\n\n.weather {\n  width: 100%;\n  text-align: center; }\n  .weather h3 {\n    font-size: 2.5rem;\n    margin: 1rem; }\n  .weather .weather-data {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-evenly;\n    align-items: center; }\n    .weather .weather-data li {\n      font-size: 2.5rem; }\n", "",{"version":3,"sources":["webpack://./src/client/styles/_base.scss"],"names":[],"mappings":"AAAA,aAAa;AACb;EACE,sBAAsB;EACtB,UAAU;EACV,SAAS,EAAE;;AAEb;EACE,oEAA+D;EAC/D,sBAAsB;EACtB,4BAA4B;EAC5B,WAAW;EACX,aAAa,EAAE;;AAEjB;EACE,aAAa;EACb,aAAa;EACb,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,uBAAuB,EAAE;EACzB;IACE,cAAc;IACd,gCAAgC;IAChC,mBAAmB;IACnB,cAAc,EAAE;EAClB;IACE,aAAa;IACb,sBAAsB;IACtB,mBAAmB;IACnB,uBAAuB,EAAE;IACzB;;MAEE,YAAY;MACZ,kBAAkB;MAClB,cAAc;MACd,WAAW;MACX,aAAa;MACb,2BAA2B;MAC3B,mBAAmB,EAAE;MACrB;;QAEE,2BAA2B,EAAE;IACjC;MACE,eAAe,EAAE;;AAEvB;EACE,aAAa;EACb,kBAAkB,EAAE;EACpB;IACE,2BAA2B;IAC3B,mBAAmB;IACnB,oCAAoC;IACpC,kBAAkB;IAClB,SAAS;IACT,QAAQ;IACR,gCAAgC;IAChC,UAAU;IACV,gBAAgB;IAChB,aAAa;IACb,sBAAsB;IACtB,mBAAmB,EAAE;IACrB;MACE,cAAc;MACd,eAAe;MACf,kBAAkB,EAAE;IACtB;MACE,gBAAgB;MAChB,iBAAiB,EAAE;IACrB;MACE,aAAa;MACb,sBAAsB,EAAE;MACxB;QACE,gBAAgB;QAChB,iBAAiB,EAAE;MACrB;QACE,mBAAmB,EAAE;;AAE7B;EACE,WAAW;EACX,kBAAkB,EAAE;EACpB;IACE,iBAAiB;IACjB,YAAY,EAAE;EAChB;IACE,aAAa;IACb,mBAAmB;IACnB,6BAA6B;IAC7B,mBAAmB,EAAE;IACrB;MACE,iBAAiB,EAAE","sourcesContent":["/* SCSS RGB */\n* {\n  box-sizing: border-box;\n  padding: 0;\n  margin: 0; }\n\nbody {\n  background: url(../media/background-image.png) no-repeat center;\n  background-size: cover;\n  background-attachment: fixed;\n  width: 100%;\n  height: 100vh; }\n\n.input-container {\n  height: 100vh;\n  padding: 10px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center; }\n  .input-container .logo {\n    font-size: 6vh;\n    font-family: \"Pacifico\", cursive;\n    letter-spacing: 8px;\n    color: #ffec1f; }\n  .input-container .form {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center; }\n    .input-container .form input,\n    .input-container .form .submit {\n      height: 10vh;\n      text-align: center;\n      font-size: 2vh;\n      width: 100%;\n      margin: 2.5vh;\n      border: 0.5vh solid #4da8e0;\n      border-radius: 20px; }\n      .input-container .form input:hover,\n      .input-container .form .submit:hover {\n        border: 0.5vh solid #e16900; }\n    .input-container .form .submit {\n      cursor: pointer; }\n\n.results {\n  height: 100vh;\n  position: relative; }\n  .results .trip-info {\n    border: 0.5vw solid #ffec1f;\n    border-radius: 15px;\n    background: rgba(255, 255, 255, 0.4);\n    position: absolute;\n    left: 50%;\n    top: 50%;\n    transform: translate(-50%, -50%);\n    width: 90%;\n    max-height: 80vh;\n    display: flex;\n    flex-direction: column;\n    align-items: center; }\n    .results .trip-info h2 {\n      margin: 2rem 0;\n      font-size: 3rem;\n      text-align: center; }\n    .results .trip-info li {\n      list-style: none;\n      font-size: 1.5rem; }\n    .results .trip-info .destination {\n      display: flex;\n      flex-direction: column; }\n      .results .trip-info .destination li {\n        margin: 0.5rem 0;\n        font-size: 2.5rem; }\n      .results .trip-info .destination img {\n        border-radius: 15px; }\n\n.weather {\n  width: 100%;\n  text-align: center; }\n  .weather h3 {\n    font-size: 2.5rem;\n    margin: 1rem; }\n  .weather .weather-data {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-evenly;\n    align-items: center; }\n    .weather .weather-data li {\n      font-size: 2.5rem; }\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, "/* SCSS RGB */\n* {\n  box-sizing: border-box;\n  padding: 0;\n  margin: 0;\n  font-family: serif; }\n\n.container {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") no-repeat center;\n  background-size: cover;\n  background-attachment: fixed;\n  max-width: 449px;\n  margin: 0 auto;\n  overflow: hidden; }\n\n.input-container {\n  min-height: 100vh;\n  padding: 10px;\n  display: flex;\n  flex-direction: column;\n  justify-content: center; }\n  .input-container .logo {\n    font-family: \"Pacifico\", cursive;\n    letter-spacing: 8px;\n    color: #ffec1f;\n    text-align: center;\n    font-size: 1.75rem; }\n  .input-container .form {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    margin-top: 3rem; }\n    .input-container .form input,\n    .input-container .form .submit {\n      height: 3.5rem;\n      text-align: center;\n      font-size: 1rem;\n      width: 60%;\n      margin: 1rem;\n      border: 3px solid #2165a4;\n      border-radius: 15px;\n      cursor: pointer; }\n      .input-container .form input:hover,\n      .input-container .form .submit:hover {\n        border: 3px solid #e16900; }\n      .input-container .form input:focus,\n      .input-container .form .submit:focus {\n        border: 3px solid #e16900;\n        outline: 0; }\n    .input-container .form .submit:hover {\n      background: #e16900;\n      color: #fff;\n      font-size: 1.5rem;\n      transition: font-size ease-in 500ms; }\n\n.results {\n  min-height: 100vh;\n  position: relative;\n  display: none; }\n  .results .trip-info {\n    border: 3px solid #ffec1f;\n    background: rgba(190, 188, 188, 0.5);\n    position: absolute;\n    left: 50%;\n    top: 50%;\n    transform: translate(-50%, -50%);\n    width: 100%;\n    max-height: 90%;\n    display: flex;\n    flex-direction: column;\n    align-items: center; }\n    .results .trip-info h2 {\n      text-align: center; }\n    .results .trip-info li {\n      list-style: none; }\n    .results .trip-info .destination {\n      display: flex;\n      flex-direction: column; }\n      .results .trip-info .destination li {\n        margin: 0.5rem 0 0 0.5rem;\n        font-size: 1.2rem; }\n      .results .trip-info .destination img {\n        width: 100%; }\n\n.weather {\n  width: 100%;\n  text-align: center; }\n  .weather h3 {\n    margin: 0.5rem; }\n  .weather .weather-data {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-evenly;\n    align-items: center; }\n    .weather .weather-data li {\n      font-size: 1.2rem;\n      font-weight: 600;\n      padding: 0.5rem; }\n", "",{"version":3,"sources":["webpack://./src/client/styles/_base.scss"],"names":[],"mappings":"AAAA,aAAa;AACb;EACE,sBAAsB;EACtB,UAAU;EACV,SAAS;EACT,kBAAkB,EAAE;;AAEtB;EACE,oEAA+D;EAC/D,sBAAsB;EACtB,4BAA4B;EAC5B,gBAAgB;EAChB,cAAc;EACd,gBAAgB,EAAE;;AAEpB;EACE,iBAAiB;EACjB,aAAa;EACb,aAAa;EACb,sBAAsB;EACtB,uBAAuB,EAAE;EACzB;IACE,gCAAgC;IAChC,mBAAmB;IACnB,cAAc;IACd,kBAAkB;IAClB,kBAAkB,EAAE;EACtB;IACE,aAAa;IACb,sBAAsB;IACtB,mBAAmB;IACnB,uBAAuB;IACvB,gBAAgB,EAAE;IAClB;;MAEE,cAAc;MACd,kBAAkB;MAClB,eAAe;MACf,UAAU;MACV,YAAY;MACZ,yBAAyB;MACzB,mBAAmB;MACnB,eAAe,EAAE;MACjB;;QAEE,yBAAyB,EAAE;MAC7B;;QAEE,yBAAyB;QACzB,UAAU,EAAE;IAChB;MACE,mBAAmB;MACnB,WAAW;MACX,iBAAiB;MACjB,mCAAmC,EAAE;;AAE3C;EACE,iBAAiB;EACjB,kBAAkB;EAClB,aAAa,EAAE;EACf;IACE,yBAAyB;IACzB,oCAAoC;IACpC,kBAAkB;IAClB,SAAS;IACT,QAAQ;IACR,gCAAgC;IAChC,WAAW;IACX,eAAe;IACf,aAAa;IACb,sBAAsB;IACtB,mBAAmB,EAAE;IACrB;MACE,kBAAkB,EAAE;IACtB;MACE,gBAAgB,EAAE;IACpB;MACE,aAAa;MACb,sBAAsB,EAAE;MACxB;QACE,yBAAyB;QACzB,iBAAiB,EAAE;MACrB;QACE,WAAW,EAAE;;AAErB;EACE,WAAW;EACX,kBAAkB,EAAE;EACpB;IACE,cAAc,EAAE;EAClB;IACE,aAAa;IACb,mBAAmB;IACnB,6BAA6B;IAC7B,mBAAmB,EAAE;IACrB;MACE,iBAAiB;MACjB,gBAAgB;MAChB,eAAe,EAAE","sourcesContent":["/* SCSS RGB */\n* {\n  box-sizing: border-box;\n  padding: 0;\n  margin: 0;\n  font-family: serif; }\n\n.container {\n  background: url(../media/background-image.png) no-repeat center;\n  background-size: cover;\n  background-attachment: fixed;\n  max-width: 449px;\n  margin: 0 auto;\n  overflow: hidden; }\n\n.input-container {\n  min-height: 100vh;\n  padding: 10px;\n  display: flex;\n  flex-direction: column;\n  justify-content: center; }\n  .input-container .logo {\n    font-family: \"Pacifico\", cursive;\n    letter-spacing: 8px;\n    color: #ffec1f;\n    text-align: center;\n    font-size: 1.75rem; }\n  .input-container .form {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    margin-top: 3rem; }\n    .input-container .form input,\n    .input-container .form .submit {\n      height: 3.5rem;\n      text-align: center;\n      font-size: 1rem;\n      width: 60%;\n      margin: 1rem;\n      border: 3px solid #2165a4;\n      border-radius: 15px;\n      cursor: pointer; }\n      .input-container .form input:hover,\n      .input-container .form .submit:hover {\n        border: 3px solid #e16900; }\n      .input-container .form input:focus,\n      .input-container .form .submit:focus {\n        border: 3px solid #e16900;\n        outline: 0; }\n    .input-container .form .submit:hover {\n      background: #e16900;\n      color: #fff;\n      font-size: 1.5rem;\n      transition: font-size ease-in 500ms; }\n\n.results {\n  min-height: 100vh;\n  position: relative;\n  display: none; }\n  .results .trip-info {\n    border: 3px solid #ffec1f;\n    background: rgba(190, 188, 188, 0.5);\n    position: absolute;\n    left: 50%;\n    top: 50%;\n    transform: translate(-50%, -50%);\n    width: 100%;\n    max-height: 90%;\n    display: flex;\n    flex-direction: column;\n    align-items: center; }\n    .results .trip-info h2 {\n      text-align: center; }\n    .results .trip-info li {\n      list-style: none; }\n    .results .trip-info .destination {\n      display: flex;\n      flex-direction: column; }\n      .results .trip-info .destination li {\n        margin: 0.5rem 0 0 0.5rem;\n        font-size: 1.2rem; }\n      .results .trip-info .destination img {\n        width: 100%; }\n\n.weather {\n  width: 100%;\n  text-align: center; }\n  .weather h3 {\n    margin: 0.5rem; }\n  .weather .weather-data {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-evenly;\n    align-items: center; }\n    .weather .weather-data li {\n      font-size: 1.2rem;\n      font-weight: 600;\n      padding: 0.5rem; }\n"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/client/styles/media.scss":
+/*!*******************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/client/styles/media.scss ***!
+  \*******************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/cssWithMappingToString.js */ "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()(_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default.a);
+// Module
+___CSS_LOADER_EXPORT___.push([module.i, "/* SCSS RGB */\n@media (min-width: 450px) {\n  .container {\n    max-width: 768px; }\n  .input-container .logo {\n    font-size: 3rem; }\n  .results .trip-info h2 {\n    font-size: 2rem;\n    margin: 0.5rem 0; }\n  .results .destination img {\n    border-radius: 15px; } }\n\n@media (min-width: 769px) {\n  .container {\n    max-width: 1024px; }\n  .input-container {\n    align-items: center; }\n    .input-container .logo {\n      font-size: 4rem; }\n    .input-container .form {\n      flex-direction: row; }\n      .input-container .form input,\n      .input-container .form .submit {\n        min-width: 250px; }\n  .container .trip-info {\n    max-width: 1200px;\n    border-radius: 15px;\n    flex-direction: row; }\n    .container .trip-info .destination {\n      margin: 0 1rem 1rem 1rem; }\n      .container .trip-info .destination h2 {\n        margin: 3rem 0; }\n      .container .trip-info .destination li {\n        font-size: 2rem; }\n    .container .trip-info .weather {\n      flex: 1; } }\n\n@media (min-width: 1025px) {\n  body {\n    max-width: 100%; }\n  .container {\n    max-width: 100%; }\n  .form {\n    max-width: 1200px; }\n  .weather h3 {\n    font-size: 2rem; } }\n", "",{"version":3,"sources":["webpack://./src/client/styles/media.scss"],"names":[],"mappings":"AAAA,aAAa;AACb;EACE;IACE,gBAAgB,EAAE;EACpB;IACE,eAAe,EAAE;EACnB;IACE,eAAe;IACf,gBAAgB,EAAE;EACpB;IACE,mBAAmB,EAAE,EAAE;;AAE3B;EACE;IACE,iBAAiB,EAAE;EACrB;IACE,mBAAmB,EAAE;IACrB;MACE,eAAe,EAAE;IACnB;MACE,mBAAmB,EAAE;MACrB;;QAEE,gBAAgB,EAAE;EACxB;IACE,iBAAiB;IACjB,mBAAmB;IACnB,mBAAmB,EAAE;IACrB;MACE,wBAAwB,EAAE;MAC1B;QACE,cAAc,EAAE;MAClB;QACE,eAAe,EAAE;IACrB;MACE,OAAO,EAAE,EAAE;;AAEjB;EACE;IACE,eAAe,EAAE;EACnB;IACE,eAAe,EAAE;EACnB;IACE,iBAAiB,EAAE;EACrB;IACE,eAAe,EAAE,EAAE","sourcesContent":["/* SCSS RGB */\n@media (min-width: 450px) {\n  .container {\n    max-width: 768px; }\n  .input-container .logo {\n    font-size: 3rem; }\n  .results .trip-info h2 {\n    font-size: 2rem;\n    margin: 0.5rem 0; }\n  .results .destination img {\n    border-radius: 15px; } }\n\n@media (min-width: 769px) {\n  .container {\n    max-width: 1024px; }\n  .input-container {\n    align-items: center; }\n    .input-container .logo {\n      font-size: 4rem; }\n    .input-container .form {\n      flex-direction: row; }\n      .input-container .form input,\n      .input-container .form .submit {\n        min-width: 250px; }\n  .container .trip-info {\n    max-width: 1200px;\n    border-radius: 15px;\n    flex-direction: row; }\n    .container .trip-info .destination {\n      margin: 0 1rem 1rem 1rem; }\n      .container .trip-info .destination h2 {\n        margin: 3rem 0; }\n      .container .trip-info .destination li {\n        font-size: 2rem; }\n    .container .trip-info .weather {\n      flex: 1; } }\n\n@media (min-width: 1025px) {\n  body {\n    max-width: 100%; }\n  .container {\n    max-width: 100%; }\n  .form {\n    max-width: 1200px; }\n  .weather h3 {\n    font-size: 2rem; } }\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -592,7 +617,7 @@ module.exports = function (list, options) {
 /*!*****************************!*\
   !*** ./src/client/index.js ***!
   \*****************************/
-/*! exports provided: logo, styles, base, submitForm, updateUI, dateCountdown, today */
+/*! exports provided: logo, styles, base, media, submitForm, updateUI, dateCountdown, today */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -606,19 +631,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_base_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles/_base.scss */ "./src/client/styles/_base.scss");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "base", function() { return _styles_base_scss__WEBPACK_IMPORTED_MODULE_2__["default"]; });
 
-/* harmony import */ var _js_submit__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/submit */ "./src/client/js/submit.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "submitForm", function() { return _js_submit__WEBPACK_IMPORTED_MODULE_3__["submitForm"]; });
+/* harmony import */ var _styles_media_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./styles/media.scss */ "./src/client/styles/media.scss");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "media", function() { return _styles_media_scss__WEBPACK_IMPORTED_MODULE_3__["default"]; });
 
-/* harmony import */ var _js_updateUI__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/updateUI */ "./src/client/js/updateUI.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "updateUI", function() { return _js_updateUI__WEBPACK_IMPORTED_MODULE_4__["updateUI"]; });
+/* harmony import */ var _js_submit__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/submit */ "./src/client/js/submit.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "submitForm", function() { return _js_submit__WEBPACK_IMPORTED_MODULE_4__["submitForm"]; });
 
-/* harmony import */ var _js_dateCountdown__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./js/dateCountdown */ "./src/client/js/dateCountdown.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "dateCountdown", function() { return _js_dateCountdown__WEBPACK_IMPORTED_MODULE_5__["dateCountdown"]; });
+/* harmony import */ var _js_updateUI__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./js/updateUI */ "./src/client/js/updateUI.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "updateUI", function() { return _js_updateUI__WEBPACK_IMPORTED_MODULE_5__["updateUI"]; });
 
-/* harmony import */ var _js_today__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./js/today */ "./src/client/js/today.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "today", function() { return _js_today__WEBPACK_IMPORTED_MODULE_6__["today"]; });
+/* harmony import */ var _js_dateCountdown__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./js/dateCountdown */ "./src/client/js/dateCountdown.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "dateCountdown", function() { return _js_dateCountdown__WEBPACK_IMPORTED_MODULE_6__["dateCountdown"]; });
 
-/* harmony import */ var _js_validator__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./js/validator */ "./src/client/js/validator.js");
+/* harmony import */ var _js_today__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./js/today */ "./src/client/js/today.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "today", function() { return _js_today__WEBPACK_IMPORTED_MODULE_7__["today"]; });
+
+/* harmony import */ var _js_validator__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./js/validator */ "./src/client/js/validator.js");
+
 
 
 
@@ -631,13 +660,13 @@ __webpack_require__.r(__webpack_exports__);
 const submitBtn = document.getElementById('submit')
 
 submitBtn.addEventListener('click', e => {
-  Object(_js_validator__WEBPACK_IMPORTED_MODULE_7__["validateForm"])(e)
+  Object(_js_validator__WEBPACK_IMPORTED_MODULE_8__["validateForm"])(e)
 })
 // sets input to today's date
 let dateControl = document.querySelector('input[type="date"]');
-dateControl.setAttribute('min', Object(_js_today__WEBPACK_IMPORTED_MODULE_6__["today"])());
+dateControl.setAttribute('min', Object(_js_today__WEBPACK_IMPORTED_MODULE_7__["today"])());
 dateControl.setAttribute('max', '2121-01-01')
-dateControl.value = Object(_js_today__WEBPACK_IMPORTED_MODULE_6__["today"])();
+dateControl.value = Object(_js_today__WEBPACK_IMPORTED_MODULE_7__["today"])();
 
 
 
@@ -757,8 +786,8 @@ function updateUI(data) {
     <h2> Your Upcoming Trip Is ${Object(_dateCountdown__WEBPACK_IMPORTED_MODULE_0__["dateCountdown"])(data.date)} </h2>
     
         <ul>
-            <li> Destination: ${data.cityName}, ${data.countryName}</li>
-            <li> Trip Date: ${data.date} </li>
+            <li> Destination: <strong> ${data.cityName}, ${data.countryName}</strong></li>
+            <li> Trip Date: <strong>${data.date} </strong></li>
             
         </ul>
     <img
@@ -875,6 +904,34 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 
 /* harmony default export */ __webpack_exports__["default"] = (_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_base_scss__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
+/***/ "./src/client/styles/media.scss":
+/*!**************************************!*\
+  !*** ./src/client/styles/media.scss ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_media_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./media.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/client/styles/media.scss");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_media_scss__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = (_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_media_scss__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
 
 /***/ }),
 

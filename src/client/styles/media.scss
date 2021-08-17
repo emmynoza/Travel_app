@@ -1,0 +1,91 @@
+/* SCSS RGB */
+$blue-jeans: rgba(77, 168, 224, 1);
+$green-blue: rgba(33, 101, 164, 1);
+$spanish-orange: rgba(225, 105, 0, 1);
+$middle-yellow: rgba(255, 236, 31, 1);
+$spanish-viridian: rgba(12, 124, 89, 1);
+
+@media (min-width: 450px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .input-container {
+    .logo {
+      font-size: 3rem;
+    }
+  }
+
+  .results {
+    .trip-info {
+      h2 {
+        font-size: 2rem;
+        margin: 0.5rem 0;
+      }
+    }
+    .destination {
+      img {
+        border-radius: 15px;
+      }
+    }
+  }
+}
+
+@media (min-width: 769px) {
+  .container {
+    max-width: 1024px;
+  }
+
+  .input-container {
+    align-items: center;
+    .logo {
+      font-size: 4rem;
+    }
+
+    .form {
+      flex-direction: row;
+      input,
+      .submit {
+        min-width: 250px;
+      }
+    }
+  }
+
+  .container .trip-info {
+    max-width: 1200px;
+    border-radius: 15px;
+    flex-direction: row;
+    .destination {
+      margin: 0 1rem 1rem 1rem;
+      h2 {
+        margin: 3rem 0;
+      }
+      li {
+        font-size: 2rem;
+      }
+    }
+
+    .weather {
+      flex: 1;
+    }
+  }
+}
+
+@media (min-width: 1025px) {
+  body {
+    max-width: 100%;
+  }
+  .container {
+    max-width: 100%;
+  }
+
+  .form {
+    max-width: 1200px;
+  }
+
+  .weather {
+    h3 {
+      font-size: 2rem;
+    }
+  }
+}

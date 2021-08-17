@@ -12,8 +12,8 @@ function updateUI(data) {
     <h2> Your Upcoming Trip Is ${dateCountdown(data.date)} </h2>
     
         <ul>
-            <li> Destination: ${data.cityName}, ${data.countryName}</li>
-            <li> Trip Date: ${data.date} </li>
+            <li> Destination: <strong> ${data.cityName}, ${data.countryName}</strong></li>
+            <li> Trip Date: <strong>${data.date} </strong></li>
             
         </ul>
     <img
