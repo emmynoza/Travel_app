@@ -11,48 +11,53 @@ $spanish-viridian: rgba(12, 124, 89, 1);
   margin: 0;
 }
 
-body {
+.container {
   background: url(../media/background-image.png) no-repeat center;
   background-size: cover;
   background-attachment: fixed;
-  width: 100%;
-  height: 100vh;
+  max-width: 400px;
+  margin: 0 auto;
+  overflow: hidden;
 }
 // Input form
 .input-container {
-  height: 100vh;
+  min-height: 100vh;
   padding: 10px;
+  // border: 2px solid red;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   .logo {
-    font-size: 6vh;
     font-family: "Pacifico", cursive;
     letter-spacing: 8px;
     color: $middle-yellow;
+    text-align: center;
   }
   .form {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 3rem;
 
+    // Buttons
     input,
     .submit {
-      height: 10vh;
+      height: 3.5rem;
       text-align: center;
-      font-size: 2vh;
-      width: 100%;
-      margin: 2.5vh;
-      border: 0.5vh solid $blue-jeans;
-      border-radius: 20px;
-      &:hover {
-        border: 0.5vh solid $spanish-orange;
-      }
-    }
-    .submit {
+      font-size: 1rem;
+      width: 60%;
+      margin: 1rem;
+      border: 3px solid $green-blue;
+      border-radius: 15px;
       cursor: pointer;
+      &:hover {
+        border: 3px solid $spanish-orange;
+      }
+      &:focus {
+        border: 3px solid $spanish-orange;
+        outline: 0;
+      }
     }
   }
 }
@@ -93,6 +98,7 @@ body {
       }
       img {
         border-radius: 15px;
+        max-width: 100%;
       }
     }
   }
