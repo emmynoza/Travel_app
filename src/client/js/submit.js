@@ -9,6 +9,7 @@ async function submitForm(input) {
         credentials: 'same-origin',
         body: JSON.stringify(input)
     });
+
     return response.json()
 }
 

@@ -2,7 +2,7 @@ import { dateCountdown } from "./dateCountdown";
 
 
 function updateUI(data) {
-    console.log(data);
+    // creates a template of html with data from APIs dynamically injected
     const results = document.getElementById('results')
 
     const destination = document.getElementById('destination');
@@ -21,6 +21,7 @@ function updateUI(data) {
     alt= "image of ${data.cityName}"
     />
     `
+    // weather info, icons
     weatherWrapper.innerHTML = `
     <h3> Current Weather in ${data.cityName}: </h3>
     <ul class= "weather-data" id="weather-data">

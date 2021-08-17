@@ -617,7 +617,7 @@ module.exports = function (list, options) {
 /*!*****************************!*\
   !*** ./src/client/index.js ***!
   \*****************************/
-/*! exports provided: logo, styles, base, media, submitForm, updateUI, dateCountdown, today */
+/*! exports provided: logo, styles, base, media, submitForm, validateForm, updateUI, dateCountdown, today */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -647,6 +647,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "today", function() { return _js_today__WEBPACK_IMPORTED_MODULE_7__["today"]; });
 
 /* harmony import */ var _js_validator__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./js/validator */ "./src/client/js/validator.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "validateForm", function() { return _js_validator__WEBPACK_IMPORTED_MODULE_8__["validateForm"]; });
 
 
 
@@ -657,16 +658,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const submitBtn = document.getElementById('submit')
 
-submitBtn.addEventListener('click', e => {
-  Object(_js_validator__WEBPACK_IMPORTED_MODULE_8__["validateForm"])(e)
-})
-// sets input to today's date
-let dateControl = document.querySelector('input[type="date"]');
-dateControl.setAttribute('min', Object(_js_today__WEBPACK_IMPORTED_MODULE_7__["today"])());
-dateControl.setAttribute('max', '2121-01-01')
-dateControl.value = Object(_js_today__WEBPACK_IMPORTED_MODULE_7__["today"])();
 
 
 
@@ -728,6 +720,7 @@ async function submitForm(input) {
         credentials: 'same-origin',
         body: JSON.stringify(input)
     });
+
     return response.json()
 }
 
@@ -745,6 +738,12 @@ async function submitForm(input) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "today", function() { return today; });
+// sets input to today's date
+let dateControl = document.querySelector('input[type="date"]');
+dateControl.setAttribute('min', today());
+dateControl.setAttribute('max', '2121-01-01')
+dateControl.value = today();
+
 function today() {
 
     let today = new Date();
@@ -776,7 +775,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function updateUI(data) {
-    console.log(data);
+    // creates a template of html with data from APIs dynamically injected
     const results = document.getElementById('results')
 
     const destination = document.getElementById('destination');
@@ -795,6 +794,7 @@ function updateUI(data) {
     alt= "image of ${data.cityName}"
     />
     `
+    // weather info, icons
     weatherWrapper.innerHTML = `
     <h3> Current Weather in ${data.cityName}: </h3>
     <ul class= "weather-data" id="weather-data">
@@ -830,21 +830,23 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+const submitBtn = document.getElementById('submit')
+
+submitBtn.addEventListener('click', e => {
+    validateForm(e)
+})
+
 function validateForm(e) {
     e.preventDefault();
     const cityInput = document.getElementById('city').value;
     const dateInput = document.getElementById('date').value;
 
     const userInput = { city: cityInput, date: dateInput }
-    console.log(userInput);
 
-    cityInput === '' || dateInput === '' ? console.log('error') : Object(_submit__WEBPACK_IMPORTED_MODULE_0__["submitForm"])(userInput)
+    cityInput === '' || dateInput === '' ? alert('Please enter a destination and a date!') : Object(_submit__WEBPACK_IMPORTED_MODULE_0__["submitForm"])(userInput)
         .then(data => {
             // response to send to UI
             Object(_updateUI__WEBPACK_IMPORTED_MODULE_1__["updateUI"])(data)
-        })
-        .catch((error) => {
-            console.error('Error:', error);
         })
 
 }

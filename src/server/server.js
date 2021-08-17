@@ -60,10 +60,12 @@ app.post('/makeCalls', async (req, res) => {
   const pixabayURL = `https://pixabay.com/api/?key=${pixabayKey}&q=${geonameData.city}&category=places&image_type=photo&orientation=horizontal&safesearch=true`
   // Call API
 
-  await (fetch(encodeURI(pixabayURL))
-    .then(res => res.json())
-    .then(data => { pixabayData = { img: data.hits[0].webformatURL } })
-    .catch(error => { res.send(error), console.log(error); }))
+  await (fetch(pixabayURL)
+    .then(res =>
+      res.json()
+    )
+    .then(data => pixabayData = { img: data.hits[0].webformatURL })
+  )
 
   projectData = { temp: weatherData.temp, weather: weatherData.weather, icon: weatherData.icon, cityName: geonameData.city, countryName: geonameData.countryName, date: userInput.date, img: pixabayData.img }
 

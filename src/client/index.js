@@ -8,16 +8,6 @@ import { dateCountdown } from './js/dateCountdown'
 import { today } from './js/today'
 import { validateForm } from './js/validator'
 
-const submitBtn = document.getElementById('submit')
-
-submitBtn.addEventListener('click', e => {
-  validateForm(e)
-})
-// sets input to today's date
-let dateControl = document.querySelector('input[type="date"]');
-dateControl.setAttribute('min', today());
-dateControl.setAttribute('max', '2121-01-01')
-dateControl.value = today();
 
 export {
   logo,
@@ -25,6 +15,7 @@ export {
   base,
   media,
   submitForm,
+  validateForm,
   updateUI,
   dateCountdown,
   today
