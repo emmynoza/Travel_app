@@ -8,13 +8,13 @@ function dateCountdown(dateInput) {
     const difference = (d1.getTime() - d2.getTime()) / (1000 * 60 * 60 * 24).toFixed(0);
 
     if (difference > 1) {
-        return `${difference} Days Away!`
+        return `Is ${difference} Days Away!`
     } else if (difference === 1) {
-        return `${difference} Day Away!`
+        return `Is ${difference} Day Away!`
     } else if (difference === 0) {
-        return `Today!`
+        return `Is Today!`
     } else {
-        return `Expired`
+        return `Has Expired`
     }
 }
 

@@ -685,13 +685,13 @@ function dateCountdown(dateInput) {
     const difference = (d1.getTime() - d2.getTime()) / (1000 * 60 * 60 * 24).toFixed(0);
 
     if (difference > 1) {
-        return `${difference} Days Away!`
+        return `Is ${difference} Days Away!`
     } else if (difference === 1) {
-        return `${difference} Day Away!`
+        return `Is ${difference} Day Away!`
     } else if (difference === 0) {
-        return `Today!`
+        return `Is Today!`
     } else {
-        return `Expired`
+        return `Has Expired`
     }
 }
 
@@ -782,7 +782,7 @@ function updateUI(data) {
     const weatherWrapper = document.getElementById('weather');
 
     destination.innerHTML = `
-    <h2> Your Upcoming Trip Is ${Object(_dateCountdown__WEBPACK_IMPORTED_MODULE_0__["dateCountdown"])(data.date)} </h2>
+    <h2> Your Upcoming Trip ${Object(_dateCountdown__WEBPACK_IMPORTED_MODULE_0__["dateCountdown"])(data.date)} </h2>
     
         <ul>
             <li> Destination: <strong> ${data.cityName}, ${data.countryName}</strong></li>

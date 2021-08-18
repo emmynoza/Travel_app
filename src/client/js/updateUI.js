@@ -9,7 +9,7 @@ function updateUI(data) {
     const weatherWrapper = document.getElementById('weather');
 
     destination.innerHTML = `
-    <h2> Your Upcoming Trip Is ${dateCountdown(data.date)} </h2>
+    <h2> Your Upcoming Trip ${dateCountdown(data.date)} </h2>
     
         <ul>
             <li> Destination: <strong> ${data.cityName}, ${data.countryName}</strong></li>
