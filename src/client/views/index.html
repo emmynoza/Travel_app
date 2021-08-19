@@ -24,7 +24,12 @@
             placeholder="Enter Your Destination"
           />
           <label for="date"></label>
-          <input type="date" id="date" placeholder="Enter Date" />
+          <input
+            type="text"
+            id="date"
+            placeholder="Enter Date: MM/DD/YYY"
+            onfocus="(this.type='date')"
+          />
           <button type="submit" class="submit" id="submit">Let's Go!</button>
         </form>
       </section>

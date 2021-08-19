@@ -43,7 +43,11 @@ app.post('/makeCalls', async (req, res) => {
   await (fetch(encodeURI(geonameBaseURL))
     // get lat long countryName 
     .then(res => res.json())
-    .then(data => geonameData = { lng: data.geonames[0].lng, lat: data.geonames[0].lat, countryName: data.geonames[0].countryName, city: data.geonames[0].toponymName }))
+    .then(data => geonameData = { lng: data.geonames[0].lng, lat: data.geonames[0].lat, countryName: data.geonames[0].countryName, city: data.geonames[0].toponymName })
+    .catch(err => {
+      console.log(err)
+      return err.message
+    }))
 
   // WEATHERBIT API
   const key = process.env.weather_KEY
@@ -54,7 +58,11 @@ app.post('/makeCalls', async (req, res) => {
   await (fetch(url)
     // get temperature and weather description
     .then(res => res.json())
-    .then(res => weatherData = { temp: res.data[0].temp, weather: res.data[0].weather.description, icon: res.data[0].weather.icon }))
+    .then(res => weatherData = { temp: res.data[0].temp, weather: res.data[0].weather.description, icon: res.data[0].weather.icon })
+    .catch(err => {
+      console.log(err)
+      return err.message
+    }))
   // PIXABAY API
   const pixabayKey = process.env.pixabay_KEY
   const pixabayURL = `https://pixabay.com/api/?key=${pixabayKey}&q=${geonameData.city}&category=places&image_type=photo&orientation=horizontal&safesearch=true`
@@ -64,11 +72,17 @@ app.post('/makeCalls', async (req, res) => {
     .then(res =>
       res.json()
     )
-    .then(data => pixabayData = { img: data.hits[0].webformatURL })
+    .then(data => {
+      pixabayData = { img: data.hits[0].webformatURL }
+    })
+    .catch(err => {
+      console.log(err)
+      return err.message
+    })
   )
 
   projectData = { temp: weatherData.temp, weather: weatherData.weather, icon: weatherData.icon, cityName: geonameData.city, countryName: geonameData.countryName, date: userInput.date, img: pixabayData.img }
-
+  console.log(projectData);
   res.send(projectData)
 
 })

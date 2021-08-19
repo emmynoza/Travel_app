@@ -617,7 +617,7 @@ module.exports = function (list, options) {
 /*!*****************************!*\
   !*** ./src/client/index.js ***!
   \*****************************/
-/*! exports provided: logo, styles, base, media, submitForm, validateForm, updateUI, dateCountdown, today */
+/*! exports provided: logo, styles, base, media, submitForm, validateForm, updateUI, dateCountdown, today, dateInput */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -648,6 +648,9 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony import */ var _js_validator__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./js/validator */ "./src/client/js/validator.js");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "validateForm", function() { return _js_validator__WEBPACK_IMPORTED_MODULE_8__["validateForm"]; });
+
+/* harmony import */ var _js_setToday__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./js/setToday */ "./src/client/js/setToday.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "dateInput", function() { return _js_setToday__WEBPACK_IMPORTED_MODULE_9__["dateInput"]; });
 
 
 
@@ -699,6 +702,33 @@ function dateCountdown(dateInput) {
 
 /***/ }),
 
+/***/ "./src/client/js/setToday.js":
+/*!***********************************!*\
+  !*** ./src/client/js/setToday.js ***!
+  \***********************************/
+/*! exports provided: dateInput */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "dateInput", function() { return dateInput; });
+/* harmony import */ var _today__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./today */ "./src/client/js/today.js");
+
+const dateInput = document.getElementById('date')
+
+dateInput.addEventListener('focus', e => {
+    e.preventDefault();
+    // sets input to today's date
+    let dateControl = document.querySelector('input[type="date"]');
+    dateControl.setAttribute('min', Object(_today__WEBPACK_IMPORTED_MODULE_0__["today"])());
+    dateControl.setAttribute('max', '2121-01-01')
+    dateControl.value = Object(_today__WEBPACK_IMPORTED_MODULE_0__["today"])();
+})
+
+
+
+/***/ }),
+
 /***/ "./src/client/js/submit.js":
 /*!*********************************!*\
   !*** ./src/client/js/submit.js ***!
@@ -738,11 +768,6 @@ async function submitForm(input) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "today", function() { return today; });
-// sets input to today's date
-let dateControl = document.querySelector('input[type="date"]');
-dateControl.setAttribute('min', today());
-dateControl.setAttribute('max', '2121-01-01')
-dateControl.value = today();
 
 function today() {
 

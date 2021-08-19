@@ -7,7 +7,7 @@ import { updateUI } from './js/updateUI'
 import { dateCountdown } from './js/dateCountdown'
 import { today } from './js/today'
 import { validateForm } from './js/validator'
-
+import { dateInput } from './js/setToday'
 
 export {
   logo,
@@ -18,5 +18,6 @@ export {
   validateForm,
   updateUI,
   dateCountdown,
-  today
+  today,
+  dateInput
 }
