@@ -21,13 +21,10 @@ app.get('/', (req, res) => {
   res.sendFile("dist/index.html")
 })
 
-// Setup Server
-const port = 8000;
-const server = app.listen(port, listening);
-
-function listening() {
-  console.log(`Server running on localhost:${port}`);
-}
+// test route
+app.get('/test', async (req, res) => {
+  res.json({ msg: 'pass!' })
+})
 // Post Route
 
 app.post('/makeCalls', async (req, res) => {
@@ -82,7 +79,8 @@ app.post('/makeCalls', async (req, res) => {
   )
 
   projectData = { temp: weatherData.temp, weather: weatherData.weather, icon: weatherData.icon, cityName: geonameData.city, countryName: geonameData.countryName, date: userInput.date, img: pixabayData.img }
-  console.log(projectData);
   res.send(projectData)
 
 })
+
+module.exports = app

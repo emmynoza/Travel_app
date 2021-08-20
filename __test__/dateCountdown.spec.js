@@ -1,6 +1,3 @@
-/**
- * @jest-environment jsdom
- */
 import { dateCountdown } from '../src/client/js/dateCountdown';
 import { today } from '../src/client/js/today'
 
