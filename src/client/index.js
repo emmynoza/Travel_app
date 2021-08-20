@@ -1,6 +1,5 @@
 import logo from '../client/media/wanderlust-logo.png'
 import styles from './styles/style.scss'
-import base from './styles/_base.scss'
 import media from './styles/media.scss'
 import { submitForm } from './js/submit'
 import { updateUI } from './js/updateUI'
@@ -12,7 +11,6 @@ import { dateInput } from './js/setToday'
 export {
   logo,
   styles,
-  base,
   media,
   submitForm,
   validateForm,

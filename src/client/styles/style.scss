@@ -1,0 +1,131 @@
+/* SCSS RGB */
+$blue-jeans: rgba(77, 168, 224, 1);
+$green-blue: rgba(33, 101, 164, 1);
+$spanish-orange: rgba(225, 105, 0, 1);
+$middle-yellow: rgba(255, 236, 31, 1);
+$spanish-viridian: rgba(12, 124, 89, 1);
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: serif;
+}
+
+.container {
+  background: url(../media/background-image.png) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  max-width: 449px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+// Input form
+.input-container {
+  min-height: 100vh;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .logo {
+    font-family: "Pacifico", cursive;
+    letter-spacing: 8px;
+    color: $middle-yellow;
+    text-align: center;
+    font-size: 1.75rem;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+
+    // Buttons
+    input,
+    .submit {
+      height: 3.5rem;
+      text-align: center;
+      font-size: 1rem;
+      width: 60%;
+      margin: 1rem;
+      border: 3px solid $green-blue;
+      border-radius: 15px;
+      cursor: pointer;
+      &:hover {
+        border: 3px solid $spanish-orange;
+      }
+      &:focus {
+        border: 3px solid $spanish-orange;
+        outline: 0;
+      }
+    }
+    .submit:hover,
+    .submit:focus {
+      background: $spanish-orange;
+      color: #fff;
+      font-size: 1.5rem;
+      transition: font-size ease-in 500ms;
+    }
+  }
+}
+// Results
+
+.results {
+  min-height: 100vh;
+  position: relative;
+  display: none;
+
+  // display: none;
+  .trip-info {
+    border: 3px solid $middle-yellow;
+    background: rgba(190, 188, 188, 0.5);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+      text-align: center;
+    }
+    li {
+      list-style: none;
+    }
+    .destination {
+      display: flex;
+      flex-direction: column;
+      li {
+        margin: 0.5rem 0 0 0.5rem;
+        font-size: 1.2rem;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.weather {
+  width: 100%;
+  text-align: center;
+  h3 {
+    margin: 0.5rem;
+  }
+
+  .weather-data {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    li {
+      font-size: 1.2rem;
+      font-weight: 600;
+      padding: 0.5rem;
+    }
+  }
+}
