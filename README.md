@@ -10,8 +10,9 @@ App takes in 2 inputs from the user, <strong>City</strong> and <strong>Date</str
 <hr>
 
 1. Clone my Repo
-2. On your command-line run: `node start.js`
-3. On your browser: visit (http://localhost:8000/)
+2. Make sure you have installed node and npm
+3. On your terminal: <code> npm run start </code>
+4. On your browser: visit (http://localhost:8000/)
 
 ### Technologies used
 
