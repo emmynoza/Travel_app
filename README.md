@@ -4,6 +4,9 @@
 
 <hr>
 App takes in 2 inputs from the user, <strong>City</strong> and <strong>Date</strong>, to make asynchronous fetch calls from several APIs and return data pertaining to the destination such as current weather, image of destination, and a countdown until travel date.
+### Demo
+
+![app-video](https://user-images.githubusercontent.com/73139687/130270184-13463066-d434-4988-9008-a7ac8bd11c01.gif)
 
 ### Startup
 
